@@ -187,35 +187,35 @@ p {
   font-family: 'Arial', sans-serif;
 }
 
-/* ========== TOPIC CARDS ========== */
-.cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-}
-
+/* ========== CARDS MELHORADOS ========== */
 .card {
   background-color: #FFFFFF;
   border: 1px solid #E5E7EB;
-  border-radius: 6px;
-  padding: 1.5rem;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  border-radius: 8px;
+  padding: 1.75rem;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .card:hover {
   border-color: #1E4D8C;
-  box-shadow: 0 4px 12px rgba(30, 77, 140, 0.1);
+  box-shadow: 0 6px 20px rgba(30, 77, 140, 0.12);
+  transform: translateY(-3px);
+  text-decoration: none;
 }
 
 .card-icon {
-  font-size: 1.5rem;
-  margin-bottom: 0.75rem;
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
 }
 
 .card h3 {
-  font-size: 1rem;
-  margin-bottom: 0.4rem;
+  font-size: 1.05rem;
+  font-weight: bold;
   color: #0D1B2A;
+  margin-bottom: 0.25rem;
 }
 
 .card p {
@@ -223,8 +223,111 @@ p {
   color: #6B7280;
   font-family: 'Arial', sans-serif;
   margin-bottom: 0;
+  line-height: 1.6;
 }
 
+.card-link {
+  margin-top: auto;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #1E4D8C;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+/* ========== SECTION HEADER ========== */
+.section-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 1.75rem;
+  border-bottom: 2px solid #1E4D8C;
+  padding-bottom: 0.75rem;
+}
+
+.section-header a {
+  font-size: 0.8rem;
+  font-family: 'Arial', sans-serif;
+  font-weight: 600;
+  color: #1E4D8C;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.section-header a:hover {
+  color: #3B82F6;
+  text-decoration: none;
+}
+
+.section-title {
+  font-size: 1.6rem;
+  color: #0D1B2A;
+  margin-bottom: 0.2rem;
+}
+
+.section-subtitle {
+  font-size: 0.9rem;
+  color: #6B7280;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 0;
+}
+
+/* ========== THINKERS CARDS ========== */
+.thinker-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.thinker-card:hover {
+  border-color: #1E4D8C;
+  box-shadow: 0 6px 20px rgba(30, 77, 140, 0.12);
+  transform: translateY(-3px);
+  text-decoration: none;
+}
+
+.thinker-initial {
+  width: 48px;
+  height: 48px;
+  background-color: #1E4D8C;
+  color: #FFFFFF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+  margin-bottom: 0.5rem;
+}
+
+.thinker-card h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #0D1B2A;
+}
+
+.thinker-card .thinker-area {
+  font-size: 0.75rem;
+  font-family: 'Arial', sans-serif;
+  font-weight: 600;
+  color: #3B82F6;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.thinker-card p {
+  font-size: 0.875rem;
+  color: #6B7280;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 0;
+  line-height: 1.6;
+}
 /* ========== AD BANNER ========== */
 .ad-banner {
   background-color: #F0F4FA;
@@ -255,4 +358,18 @@ p {
 
 .footer a:hover {
   color: #FFFFFF;
+}
+
+/* ========== SECTION ALT (fundo azul claro) ========== */
+.section-alt {
+  background-color: #F0F4FA;
+  max-width: 100%;
+  padding: 4rem 0;
+}
+
+.section-alt > * {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2rem;
 }

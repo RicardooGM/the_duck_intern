@@ -380,3 +380,57 @@ p {
   grid-template-columns: repeat(2, 1fr);
   gap: 1.25rem;
 }
+
+
+/* ========== DROPDOWN MENU ========== */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 6px;
+  min-width: 200px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  z-index: 200;
+  padding: 0.5rem 0;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  list-style: none;
+}
+
+.dropdown-menu li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.65rem 1.25rem;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  color: #0D1B2A;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #F0F4FA;
+  color: #1E4D8C;
+  text-decoration: none;
+}
+
+.dropdown-menu li a span {
+  font-size: 10px;
+  color: #6B7280;
+}

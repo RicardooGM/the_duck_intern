@@ -59,30 +59,104 @@
   <main class="finance-main">
 
     <!-- ACCOUNTING -->
+    <!-- ACCOUNTING -->
     <section class="topic-section">
       <div class="section-header">
         <div>
           <h2 class="section-title">Accounting & Statements</h2>
           <p class="section-subtitle">The language of business — understand the numbers before you analyze them.</p>
         </div>
+        <a href="accounting/index.html">View all →</a>
       </div>
-      <div class="cards-grid">
-        <a href="#" class="card">
-          <h3>The Three Financial Statements</h3>
-          <p>Income statement, balance sheet, cash flow — and how they talk to each other.</p>
-          <span class="card-link">Read →</span>
-        </a>
-        <a href="#" class="card">
-          <h3>Key Accounting Concepts</h3>
-          <p>Accrual vs cash, depreciation, working capital and other essentials.</p>
-          <span class="card-link">Read →</span>
-        </a>
-        <a href="#" class="card">
-          <h3>Financial Ratios</h3>
-          <p>Liquidity, profitability and leverage ratios every analyst should know.</p>
-          <span class="card-link">Read →</span>
-        </a>
+
+      <div class="slider-container" id="slider-accounting">
+        <div class="slider-track" id="track-accounting">
+
+          <!-- PAGE 1: Financial Statements -->
+          <div class="slider-page">
+            <p class="slider-label">Financial Statements</p>
+            <div class="cards-grid">
+              <a href="#" class="card">
+                <h3>The Three Financial Statements</h3>
+                <p>Income statement, balance sheet, cash flow — and how they talk to each other.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Income Statement</h3>
+                <p>Revenue, expenses and profit — reading a company's performance over time.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Balance Sheet</h3>
+                <p>Assets, liabilities and equity — a snapshot of what a company owns and owes.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Cash Flow Statement</h3>
+                <p>Where the cash actually goes — operating, investing and financing activities.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>How the Statements Connect</h3>
+                <p>Net income, depreciation, capex — how changes in one statement flow into another.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Financial Ratios</h3>
+                <p>Liquidity, profitability and leverage ratios every analyst should know.</p>
+                <span class="card-link">Read →</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- PAGE 2: Key Concepts -->
+          <div class="slider-page">
+            <p class="slider-label">Key Concepts</p>
+            <div class="cards-grid">
+              <a href="#" class="card">
+                <h3>Accrual vs Cash Accounting</h3>
+                <p>Why revenue recognition matters and how it affects reported earnings.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Depreciation & Amortization</h3>
+                <p>How assets lose value over time and why D&A matters in modeling.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Working Capital</h3>
+                <p>The difference between current assets and liabilities — and why it matters.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>CapEx</h3>
+                <p>Capital expenditures — investing in the future of the business.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Goodwill & Intangibles</h3>
+                <p>What happens on the balance sheet when you overpay for an acquisition.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Deferred Tax</h3>
+                <p>The gap between accounting income and taxable income.</p>
+                <span class="card-link">Read →</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+        <div class="slider-nav">
+          <button class="slider-btn" onclick="moveSlider('accounting', -1)">←</button>
+          <div class="slider-dots" id="dots-accounting">
+            <button class="slider-dot active" onclick="goToSlide('accounting', 0)"></button>
+            <button class="slider-dot" onclick="goToSlide('accounting', 1)"></button>
+          </div>
+          <button class="slider-btn" onclick="moveSlider('accounting', 1)">→</button>
+        </div>
       </div>
+
     </section>
 
     <!-- VALUATION -->
@@ -92,6 +166,7 @@
           <h2 class="section-title">Valuation</h2>
           <p class="section-subtitle">How to estimate what a company is truly worth.</p>
         </div>
+        <a href="valuation/index.html">View all →</a>
       </div>
 
       <div class="slider-container" id="slider-valuation">
@@ -149,7 +224,7 @@
                 <span class="card-link">Read →</span>
               </a>
               <a href="#" class="card">
-                <h3>Cost of Equity (CAPM)</h3>
+                <h3>Cost of Equity </h3>
                 <p>How to estimate the return required by equity investors.</p>
                 <span class="card-link">Read →</span>
               </a>
@@ -213,7 +288,6 @@
     </section>
 
 
-    
     <!-- FINANCE CAREERS -->
     <section class="topic-section">
       <div class="section-header">
@@ -221,26 +295,138 @@
           <h2 class="section-title">Finance Careers</h2>
           <p class="section-subtitle">Explore the main paths within finance — from IB to corporate finance and credit.</p>
         </div>
+        <a href="finance-careers/index.html">View all →</a>
       </div>
-      <div class="cards-grid">
-        <a href="#" class="card">
-          <h3>Investment Banking</h3>
-          <p>M&A, LBO, IPOs and the deal process — life on the sell side.</p>
-          <span class="card-link">Explore →</span>
-        </a>
-        <a href="#" class="card">
-          <h3>Corporate Finance</h3>
-          <p>Capital structure, WACC, dividends and financial planning inside a company.</p>
-          <span class="card-link">Explore →</span>
-        </a>
-        <a href="#" class="card">
-          <h3>Credit Analysis</h3>
-          <p>How banks and investors assess the risk of lending money.</p>
-          <span class="card-link">Explore →</span>
-        </a>
+
+      <div class="slider-container" id="slider-careers">
+        <div class="slider-track" id="track-careers">
+
+          <!-- PAGE 1: Investment Banking -->
+          <div class="slider-page">
+            <p class="slider-label">Investment Banking</p>
+            <div class="cards-grid">
+              <a href="#" class="card">
+                <h3>What is Investment Banking?</h3>
+                <p>The role of investment banks in capital markets and corporate transactions.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>M&A Deal Process</h3>
+                <p>From LOI to close — the anatomy of a merger or acquisition.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>LBO — Leveraged Buyout</h3>
+                <p>How private equity funds a buyout and generates returns.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>IPO & Capital Markets</h3>
+                <p>Taking a company public — the process, the players and the pricing.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Pitch Book Basics</h3>
+                <p>What goes into an IB pitch book and how analysts build them.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Life as an IB Analyst</h3>
+                <p>The day-to-day reality of working in investment banking.</p>
+                <span class="card-link">Read →</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- PAGE 2: Corporate Finance -->
+          <div class="slider-page">
+            <p class="slider-label">Corporate Finance</p>
+            <div class="cards-grid">
+              <a href="#" class="card">
+                <h3>What is Corporate Finance?</h3>
+                <p>How companies make financial decisions to maximize shareholder value.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Capital Structure</h3>
+                <p>How companies balance debt and equity to finance their operations.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Dividend Policy</h3>
+                <p>When and why companies return cash to shareholders.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Working Capital Management</h3>
+                <p>Managing short-term assets and liabilities to keep the business running.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Budgeting & Financial Planning</h3>
+                <p>How companies plan, forecast and allocate resources.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Life in Corporate Finance</h3>
+                <p>The day-to-day reality of working inside a company's finance team.</p>
+                <span class="card-link">Read →</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- PAGE 3: Credit Analysis -->
+          <div class="slider-page">
+            <p class="slider-label">Credit Analysis</p>
+            <div class="cards-grid">
+              <a href="#" class="card">
+                <h3>What is Credit Analysis?</h3>
+                <p>How banks and investors assess the risk of lending money.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Credit Metrics & Ratios</h3>
+                <p>The key ratios used to evaluate a borrower's creditworthiness.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Rating Agencies</h3>
+                <p>How Moody's, S&P and Fitch assess credit risk.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Leveraged Finance</h3>
+                <p>Lending to highly leveraged companies — risks, returns and structures.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Distressed Debt</h3>
+                <p>Investing in companies in financial difficulty — risks and opportunities.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Life in Credit Analysis</h3>
+                <p>The day-to-day reality of working as a credit analyst.</p>
+                <span class="card-link">Read →</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+        <div class="slider-nav">
+          <button class="slider-btn" onclick="moveSlider('careers', -1)">←</button>
+          <div class="slider-dots" id="dots-careers">
+            <button class="slider-dot active" onclick="goToSlide('careers', 0)"></button>
+            <button class="slider-dot" onclick="goToSlide('careers', 1)"></button>
+            <button class="slider-dot" onclick="goToSlide('careers', 2)"></button>
+          </div>
+          <button class="slider-btn" onclick="moveSlider('careers', 1)">→</button>
+        </div>
       </div>
+
     </section>
 
+    <!-- KEY INDICATORS -->
     <!-- KEY INDICATORS -->
     <section class="topic-section topic-section-alt">
       <div class="section-header">
@@ -248,29 +434,97 @@
           <h2 class="section-title">Key Indicators & Metrics</h2>
           <p class="section-subtitle">The numbers that come up in every meeting, every model, every deal.</p>
         </div>
+        <a href="key-indicators/index.html">View all →</a>
       </div>
-      <div class="cards-grid">
-        <a href="#" class="card">
-          <h3>EBITDA & EBIT</h3>
-          <p>What they measure, how they differ and why they matter in valuation.</p>
-          <span class="card-link">Read →</span>
-        </a>
-        <a href="#" class="card">
-          <h3>IRR & Returns</h3>
-          <p>Internal rate of return and how investors measure performance.</p>
-          <span class="card-link">Read →</span>
-        </a>
-        <a href="#" class="card">
-          <h3>Leverage & Debt Metrics</h3>
-          <p>Net debt, leverage ratios and how to read a company's debt load.</p>
-          <span class="card-link">Read →</span>
-        </a>
-        <a href="#" class="card">
-          <h3>Margins & Profitability</h3>
-          <p>Gross margin, EBITDA margin, net margin — measuring operational efficiency.</p>
-          <span class="card-link">Read →</span>
-        </a>
+
+      <div class="slider-container" id="slider-indicators">
+        <div class="slider-track" id="track-indicators">
+
+          <!-- PAGE 1: Profitability -->
+          <div class="slider-page">
+            <p class="slider-label">Profitability</p>
+            <div class="cards-grid">
+              <a href="#" class="card">
+                <h3>EBITDA & EBIT</h3>
+                <p>What they measure, how they differ and why they matter in valuation.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Gross Margin</h3>
+                <p>The first line of profitability — revenue minus cost of goods sold.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>EBITDA Margin</h3>
+                <p>Measuring operational efficiency before interest, taxes and non-cash items.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Net Margin</h3>
+                <p>The bottom line — what's left after all expenses are paid.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Return on Equity (ROE)</h3>
+                <p>How efficiently a company generates profit from shareholders' equity.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Return on Assets (ROA)</h3>
+                <p>How efficiently a company uses its assets to generate profit.</p>
+                <span class="card-link">Read →</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- PAGE 2: Returns & Leverage -->
+          <div class="slider-page">
+            <p class="slider-label">Returns & Leverage</p>
+            <div class="cards-grid">
+              <a href="#" class="card">
+                <h3>IRR — Internal Rate of Return</h3>
+                <p>How investors measure the profitability of an investment over time.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>NPV — Net Present Value</h3>
+                <p>The value of future cash flows in today's dollars.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>MOIC — Multiple on Invested Capital</h3>
+                <p>How much money was made relative to how much was invested.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Net Debt</h3>
+                <p>Total debt minus cash — the real debt burden of a company.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Leverage Ratios</h3>
+                <p>Net Debt/EBITDA and other ratios used to measure a company's debt load.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Interest Coverage Ratio</h3>
+                <p>Can the company afford to pay its interest expenses?</p>
+                <span class="card-link">Read →</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+        <div class="slider-nav">
+          <button class="slider-btn" onclick="moveSlider('indicators', -1)">←</button>
+          <div class="slider-dots" id="dots-indicators">
+            <button class="slider-dot active" onclick="goToSlide('indicators', 0)"></button>
+            <button class="slider-dot" onclick="goToSlide('indicators', 1)"></button>
+          </div>
+          <button class="slider-btn" onclick="moveSlider('indicators', 1)">→</button>
+        </div>
       </div>
+
     </section>
 
   </main>

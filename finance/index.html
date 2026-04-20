@@ -93,35 +93,127 @@
           <p class="section-subtitle">How to estimate what a company is truly worth.</p>
         </div>
       </div>
-      <div class="cards-grid">
-        <a href="#" class="card">
-          <h3>Introduction to Valuation</h3>
-          <p>What valuation is, why it matters and the main methodologies.</p>
-          <span class="card-link">Read →</span>
-        </a>
-        <a href="#" class="card">
-          <h3>DCF — Discounted Cash Flow</h3>
-          <p>The gold standard of valuation — projecting cash flows and discounting them to present value.</p>
-          <span class="card-link">Read →</span>
-        </a>
-        <a href="#" class="card">
-          <h3>Comparable Companies (Comps)</h3>
-          <p>How to value a company by comparing it to its peers.</p>
-          <span class="card-link">Read →</span>
-        </a>
-        <a href="#" class="card">
-          <h3>Precedent Transactions</h3>
-          <p>Using past M&A deals to benchmark valuation.</p>
-          <span class="card-link">Read →</span>
-        </a>
-        <a href="#" class="card">
-          <h3>Key Multiples</h3>
-          <p>EV/EBITDA, P/E, EV/Revenue — reading the market's pricing signals.</p>
-          <span class="card-link">Read →</span>
-        </a>
+
+      <div class="slider-container" id="slider-valuation">
+        <div class="slider-track" id="track-valuation">
+
+          <!-- PAGE 1: Valuation Metrics -->
+          <div class="slider-page">
+            <p class="slider-label">Valuation Metrics</p>
+            <div class="cards-grid">
+              <a href="#" class="card">
+                <h3>Introduction to Valuation</h3>
+                <p>What valuation is, why it matters and the main methodologies.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>DCF — Discounted Cash Flow</h3>
+                <p>The gold standard of valuation — projecting cash flows and discounting them to present value.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Comparable Companies (Comps)</h3>
+                <p>How to value a company by comparing it to its peers.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Precedent Transactions</h3>
+                <p>Using past M&A deals to benchmark valuation.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Key Multiples</h3>
+                <p>EV/EBITDA, P/E, EV/Revenue — reading the market's pricing signals.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Sensitivity Analysis</h3>
+                <p>How small changes in assumptions can dramatically affect valuation output.</p>
+                <span class="card-link">Read →</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- PAGE 2: Discount Rate -->
+          <div class="slider-page">
+            <p class="slider-label">Discount Rate</p>
+            <div class="cards-grid">
+              <a href="#" class="card">
+                <h3>WACC</h3>
+                <p>Weighted Average Cost of Capital — the discount rate that ties it all together.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Beta</h3>
+                <p>Measuring a stock's volatility relative to the market.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Cost of Equity (CAPM)</h3>
+                <p>How to estimate the return required by equity investors.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Cost of Debt</h3>
+                <p>The effective rate a company pays on its debt obligations.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Risk-Free Rate</h3>
+                <p>The baseline return used in every discount rate calculation.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Equity Risk Premium</h3>
+                <p>The extra return investors demand for holding equities over risk-free assets.</p>
+                <span class="card-link">Read →</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- PAGE 3: Capital Structure -->
+          <div class="slider-page">
+            <p class="slider-label">Capital Structure</p>
+            <div class="cards-grid">
+              <a href="#" class="card">
+                <h3>Capital Structure</h3>
+                <p>How companies balance debt and equity to finance their operations.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Debt vs Equity</h3>
+                <p>The trade-offs between debt and equity financing.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Leverage</h3>
+                <p>How debt amplifies returns — and risks.</p>
+                <span class="card-link">Read →</span>
+              </a>
+              <a href="#" class="card">
+                <h3>Terminal Value</h3>
+                <p>Estimating the value of a company beyond the forecast period.</p>
+                <span class="card-link">Read →</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+        <div class="slider-nav">
+          <button class="slider-btn" onclick="moveSlider('valuation', -1)">←</button>
+          <div class="slider-dots" id="dots-valuation">
+            <button class="slider-dot active" onclick="goToSlide('valuation', 0)"></button>
+            <button class="slider-dot" onclick="goToSlide('valuation', 1)"></button>
+            <button class="slider-dot" onclick="goToSlide('valuation', 2)"></button>
+          </div>
+          <button class="slider-btn" onclick="moveSlider('valuation', 1)">→</button>
+        </div>
       </div>
+
     </section>
 
+
+    
     <!-- FINANCE CAREERS -->
     <section class="topic-section">
       <div class="section-header">
@@ -204,3 +296,35 @@
 
 </body>
 </html>
+
+<script>
+  const sliderState = {};
+
+  function initSlider(id) {
+    if (!sliderState[id]) sliderState[id] = 0;
+  }
+
+  function moveSlider(id, direction) {
+    initSlider(id);
+    const track = document.getElementById('track-' + id);
+    const pages = track.querySelectorAll('.slider-page');
+    const total = pages.length;
+    sliderState[id] = (sliderState[id] + direction + total) % total;
+    updateSlider(id);
+  }
+
+  function goToSlide(id, index) {
+    initSlider(id);
+    sliderState[id] = index;
+    updateSlider(id);
+  }
+
+  function updateSlider(id) {
+    const track = document.getElementById('track-' + id);
+    const dots = document.querySelectorAll('#dots-' + id + ' .slider-dot');
+    track.style.transform = 'translateX(-' + (sliderState[id] * 100) + '%)';
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('active', i === sliderState[id]);
+    });
+  }
+</script>

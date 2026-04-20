@@ -523,3 +523,80 @@ p {
   border-bottom: 2px solid #1E4D8C;
   padding-bottom: 2px;
 }
+
+/* ========== SLIDER / CAROUSEL ========== */
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.slider-page {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 1.25rem;
+}
+
+.slider-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #CBD5E1;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border: none;
+  padding: 0;
+}
+
+.slider-dot.active {
+  background-color: #1E4D8C;
+}
+
+.slider-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.slider-btn {
+  background: transparent;
+  border: 1px solid #E5E7EB;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #1E4D8C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.slider-btn:hover {
+  background-color: #F0F4FA;
+  border-color: #1E4D8C;
+}
+
+.slider-label {
+  font-size: 12px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 600;
+  color: #1E4D8C;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}

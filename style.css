@@ -434,3 +434,92 @@ p {
   font-size: 10px;
   color: #6B7280;
 }
+
+/* ========== PAGE HEADER ========== */
+.page-header {
+  background-color: #F0F4FA;
+  padding: 3.5rem 2rem 2.5rem;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.page-header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.page-eyebrow {
+  font-size: 11px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #1E4D8C;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.page-header h1 {
+  font-size: 2.2rem;
+  color: #0D1B2A;
+  margin-bottom: 0.75rem;
+}
+
+.page-header p {
+  font-size: 1rem;
+  color: #6B7280;
+  font-family: 'Arial', sans-serif;
+  max-width: 600px;
+  margin-bottom: 0;
+}
+
+/* ========== BREADCRUMB ========== */
+.breadcrumb {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.75rem 2rem;
+  font-size: 13px;
+  font-family: 'Arial', sans-serif;
+  color: #6B7280;
+}
+
+.breadcrumb a {
+  color: #1E4D8C;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb span {
+  margin: 0 0.4rem;
+}
+
+/* ========== TOPIC SECTIONS ========== */
+.finance-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.topic-section {
+  padding: 3rem 0;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.topic-section:last-child {
+  border-bottom: none;
+}
+
+.topic-section-alt {
+  background-color: #F0F4FA;
+  margin: 0 -2rem;
+  padding: 3rem 2rem;
+}
+
+/* ========== ACTIVE NAV LINK ========== */
+.navbar-links a.active {
+  color: #1E4D8C;
+  font-weight: 600;
+  border-bottom: 2px solid #1E4D8C;
+  padding-bottom: 2px;
+}

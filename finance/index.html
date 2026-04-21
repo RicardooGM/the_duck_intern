@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Finance — The Duck Intern"/>
   <title>Finance | The Duck Intern</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css" />
   <link rel="icon" href="../assets/logo.png" type="image/png"/>
 </head>
@@ -12,10 +15,15 @@
 
   <!-- NAVBAR -->
   <nav class="navbar">
-    <div class="navbar-left">
-      <div class="navbar-logo">
-        <img src="../assets/logo.png" alt="The Duck Intern Logo" />
-        <span>The Duck Intern</span>
+    <div class="navbar-inner">
+      <div class="navbar-left">
+        <a href="../index.html" class="navbar-logo">
+          <img src="../assets/logo.png" alt="The Duck Intern Logo" />
+        </a>
+        <div class="navbar-logo-text">
+          <span class="brand-name">The Duck Intern</span>
+          <span class="brand-sub">An Education in Markets & Minds</span>
+        </div>
       </div>
       <ul class="navbar-links">
         <li><a href="../index.html">Home</a></li>
@@ -31,554 +39,711 @@
           </ul>
         </li>
       </ul>
-    </div>
-    <div class="navbar-search">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="11" cy="11" r="8"/>
-        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
-      </svg>
-      <input type="text" placeholder="Search topics..." />
+      <div class="navbar-right">
+        <div class="navbar-search">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>
+          </svg>
+          <input placeholder="Search topics…" />
+        </div>
+      </div>
     </div>
   </nav>
 
-  <!-- PAGE HEADER -->
-  <section class="page-header">
-    <div class="page-header-inner">
-      <span class="page-eyebrow">The Duck Intern — Finance</span>
-      <h1>Finance</h1>
-      <p>From financial statements to valuation and career paths — the core toolkit of every analyst.</p>
-    </div>
-  </section>
-
   <!-- BREADCRUMB -->
   <div class="breadcrumb">
-    <a href="../index.html">Home</a> <span>›</span> <span>Finance</span>
+    <a href="../index.html">Home</a>
+    <span class="sep">›</span>
+    <span class="here">Finance</span>
   </div>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero">
+    <div>
+      <div class="page-kicker"><span class="bar"></span>The Finance Desk</div>
+      <h1>Where numbers <em>meet decisions.</em></h1>
+      <p class="lede">From reading a balance sheet to building a DCF — the core toolkit every analyst needs, explained clearly and built for the desk.</p>
+    </div>
+    <div class="hero-meta">
+      <div class="meta-row"><span>Topics</span><b>60+ essays</b></div>
+      <div class="meta-row"><span>Reading time</span><b>~20 hrs</b></div>
+      <div class="meta-row"><span>Level</span><b>Intro → Advanced</b></div>
+      <div class="meta-row"><span>Last revised</span><b>Apr 2026</b></div>
+      <div class="hero-quote">
+        "In finance, every number tells a story. Your job is to figure out if it's fiction."
+        <cite>— From the editor's desk</cite>
+      </div>
+    </div>
+  </header>
 
   <!-- MAIN CONTENT -->
-  <main class="finance-main">
+  <div class="page-main">
+    <div class="sections">
 
-    <!-- ACCOUNTING -->
-    <!-- ACCOUNTING -->
-    <section class="topic-section">
-      <div class="section-header">
-        <div>
-          <h2 class="section-title">Accounting & Statements</h2>
-          <p class="section-subtitle">The language of business — understand the numbers before you analyze them.</p>
+      <!-- ACCOUNTING & STATEMENTS -->
+      <section class="topic-section" id="accounting">
+        <div class="section-head">
+          <div class="title-group">
+            <span class="section-num">§01</span>
+            <h2 class="section-title">Accounting & Statements</h2>
+          </div>
+          <div style="display:flex;align-items:center;gap:24px;">
+            <span class="section-sub">The language of business</span>
+            <a href="accounting/index.html" style="font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);font-weight:500;">View all →</a>
+          </div>
         </div>
-        <a href="accounting/index.html">View all →</a>
+        <div class="slider-container" id="slider-accounting">
+          <div class="slider-track" id="track-accounting">
+            <div class="slider-page">
+              <p class="slider-label">Financial Statements</p>
+              <div class="topic-grid">
+                <article class="card" data-title="The Three Financial Statements" data-eyebrow="Accounting · Topic 01" data-desc="Income statement, balance sheet, cash flow — and how they talk to each other." data-time="12 min read" data-level="Intro" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">01 / 06</span><span class="card-time">12 min</span></div>
+                  <h3 class="card-title">The Three Financial Statements</h3>
+                  <p class="card-desc">Income statement, balance sheet, cash flow — and how they talk to each other.</p>
+                  <div class="card-tag"><span class="dot"></span>Intro level</div>
+                </article>
+                <article class="card" data-title="Income Statement" data-eyebrow="Accounting · Topic 02" data-desc="Revenue, expenses and profit — reading a company's performance over time." data-time="10 min read" data-level="Intro" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">02 / 06</span><span class="card-time">10 min</span></div>
+                  <h3 class="card-title">Income Statement</h3>
+                  <p class="card-desc">Revenue, expenses and profit — reading a company's performance over time.</p>
+                  <div class="card-tag"><span class="dot"></span>Intro level</div>
+                </article>
+                <article class="card" data-title="Balance Sheet" data-eyebrow="Accounting · Topic 03" data-desc="Assets, liabilities and equity — a snapshot of what a company owns and owes." data-time="11 min read" data-level="Intro" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">03 / 06</span><span class="card-time">11 min</span></div>
+                  <h3 class="card-title">Balance Sheet</h3>
+                  <p class="card-desc">Assets, liabilities and equity — a snapshot of what a company owns and owes.</p>
+                  <div class="card-tag"><span class="dot"></span>Intro level</div>
+                </article>
+                <article class="card" data-title="Cash Flow Statement" data-eyebrow="Accounting · Topic 04" data-desc="Where the cash actually goes — operating, investing and financing activities." data-time="11 min read" data-level="Intro" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">04 / 06</span><span class="card-time">11 min</span></div>
+                  <h3 class="card-title">Cash Flow Statement</h3>
+                  <p class="card-desc">Where the cash actually goes — operating, investing and financing activities.</p>
+                  <div class="card-tag"><span class="dot"></span>Intro level</div>
+                </article>
+                <article class="card" data-title="How the Statements Connect" data-eyebrow="Accounting · Topic 05" data-desc="How changes in one statement flow into another." data-time="13 min read" data-level="Intermediate" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">05 / 06</span><span class="card-time">13 min</span></div>
+                  <h3 class="card-title">How the Statements Connect</h3>
+                  <p class="card-desc">Net income, depreciation, capex — how changes in one statement flow into another.</p>
+                  <div class="card-tag"><span class="dot"></span>Intermediate</div>
+                </article>
+                <article class="card" data-title="Financial Ratios" data-eyebrow="Accounting · Topic 06" data-desc="Liquidity, profitability and leverage ratios every analyst should know." data-time="14 min read" data-level="Intermediate" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">06 / 06</span><span class="card-time">14 min</span></div>
+                  <h3 class="card-title">Financial Ratios</h3>
+                  <p class="card-desc">Liquidity, profitability and leverage ratios every analyst should know.</p>
+                  <div class="card-tag"><span class="dot"></span>Intermediate</div>
+                </article>
+              </div>
+            </div>
+            <div class="slider-page">
+              <p class="slider-label">Key Concepts</p>
+              <div class="topic-grid">
+                <article class="card" data-title="Accrual vs Cash Accounting" data-eyebrow="Accounting · Topic 07" data-desc="Why revenue recognition matters and how it affects reported earnings." data-time="10 min read" data-level="Intro" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">01 / 06</span><span class="card-time">10 min</span></div>
+                  <h3 class="card-title">Accrual vs Cash Accounting</h3>
+                  <p class="card-desc">Why revenue recognition matters and how it affects reported earnings.</p>
+                  <div class="card-tag"><span class="dot"></span>Intro level</div>
+                </article>
+                <article class="card" data-title="Depreciation & Amortization" data-eyebrow="Accounting · Topic 08" data-desc="How assets lose value over time and why D&A matters in modeling." data-time="10 min read" data-level="Intro" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">02 / 06</span><span class="card-time">10 min</span></div>
+                  <h3 class="card-title">Depreciation & Amortization</h3>
+                  <p class="card-desc">How assets lose value over time and why D&A matters in modeling.</p>
+                  <div class="card-tag"><span class="dot"></span>Intro level</div>
+                </article>
+                <article class="card" data-title="Working Capital" data-eyebrow="Accounting · Topic 09" data-desc="The difference between current assets and liabilities — and why it matters." data-time="11 min read" data-level="Intermediate" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">03 / 06</span><span class="card-time">11 min</span></div>
+                  <h3 class="card-title">Working Capital</h3>
+                  <p class="card-desc">The difference between current assets and liabilities — and why it matters.</p>
+                  <div class="card-tag"><span class="dot"></span>Intermediate</div>
+                </article>
+                <article class="card" data-title="CapEx" data-eyebrow="Accounting · Topic 10" data-desc="Capital expenditures — investing in the future of the business." data-time="9 min read" data-level="Intermediate" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">04 / 06</span><span class="card-time">9 min</span></div>
+                  <h3 class="card-title">CapEx</h3>
+                  <p class="card-desc">Capital expenditures — investing in the future of the business.</p>
+                  <div class="card-tag"><span class="dot"></span>Intermediate</div>
+                </article>
+                <article class="card" data-title="Goodwill & Intangibles" data-eyebrow="Accounting · Topic 11" data-desc="What happens on the balance sheet when you overpay for an acquisition." data-time="12 min read" data-level="Intermediate" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">05 / 06</span><span class="card-time">12 min</span></div>
+                  <h3 class="card-title">Goodwill & Intangibles</h3>
+                  <p class="card-desc">What happens on the balance sheet when you overpay for an acquisition.</p>
+                  <div class="card-tag"><span class="dot"></span>Intermediate</div>
+                </article>
+                <article class="card" data-title="Deferred Tax" data-eyebrow="Accounting · Topic 12" data-desc="The gap between accounting income and taxable income." data-time="11 min read" data-level="Advanced" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">06 / 06</span><span class="card-time">11 min</span></div>
+                  <h3 class="card-title">Deferred Tax</h3>
+                  <p class="card-desc">The gap between accounting income and taxable income.</p>
+                  <div class="card-tag"><span class="dot"></span>Advanced</div>
+                </article>
+              </div>
+            </div>
+          </div>
+          <div class="slider-nav">
+            <button class="slider-btn" onclick="moveSlider('accounting', -1)">←</button>
+            <div class="slider-dots" id="dots-accounting">
+              <button class="slider-dot active" onclick="goToSlide('accounting', 0)"></button>
+              <button class="slider-dot" onclick="goToSlide('accounting', 1)"></button>
+            </div>
+            <button class="slider-btn" onclick="moveSlider('accounting', 1)">→</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- VALUATION -->
+      <section class="topic-section" id="valuation">
+        <div class="section-head">
+          <div class="title-group">
+            <span class="section-num">§02</span>
+            <h2 class="section-title">Valuation</h2>
+          </div>
+          <div style="display:flex;align-items:center;gap:24px;">
+            <span class="section-sub">How to estimate what a company is worth</span>
+            <a href="valuation/index.html" style="font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);font-weight:500;">View all →</a>
+          </div>
+        </div>
+        <div class="slider-container" id="slider-valuation">
+          <div class="slider-track" id="track-valuation">
+            <div class="slider-page">
+              <p class="slider-label">Valuation Metrics</p>
+              <div class="topic-grid">
+                <article class="card" data-title="Introduction to Valuation" data-eyebrow="Valuation · Topic 01" data-desc="What valuation is, why it matters and the main methodologies." data-time="10 min read" data-level="Intro" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">01 / 06</span><span class="card-time">10 min</span></div>
+                  <h3 class="card-title">Introduction to Valuation</h3>
+                  <p class="card-desc">What valuation is, why it matters and the main methodologies.</p>
+                  <div class="card-tag"><span class="dot"></span>Intro level</div>
+                </article>
+                <article class="card" data-title="DCF — Discounted Cash Flow" data-eyebrow="Valuation · Topic 02" data-desc="The gold standard of valuation — projecting cash flows and discounting them to present value." data-time="18 min read" data-level="Intermediate" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">02 / 06</span><span class="card-time">18 min</span></div>
+                  <h3 class="card-title">DCF — Discounted Cash Flow</h3>
+                  <p class="card-desc">The gold standard of valuation — projecting cash flows and discounting them to present value.</p>
+                  <div class="card-tag"><span class="dot"></span>Intermediate</div>
+                </article>
+                <article class="card" data-title="Comparable Companies (Comps)" data-eyebrow="Valuation · Topic 03" data-desc="How to value a company by comparing it to its peers." data-time="14 min read" data-level="Intermediate" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">03 / 06</span><span class="card-time">14 min</span></div>
+                  <h3 class="card-title">Comparable Companies (Comps)</h3>
+                  <p class="card-desc">How to value a company by comparing it to its peers.</p>
+                  <div class="card-tag"><span class="dot"></span>Intermediate</div>
+                </article>
+                <article class="card" data-title="Precedent Transactions" data-eyebrow="Valuation · Topic 04" data-desc="Using past M&A deals to benchmark valuation." data-time="13 min read" data-level="Intermediate" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">04 / 06</span><span class="card-time">13 min</span></div>
+                  <h3 class="card-title">Precedent Transactions</h3>
+                  <p class="card-desc">Using past M&A deals to benchmark valuation.</p>
+                  <div class="card-tag"><span class="dot"></span>Intermediate</div>
+                </article>
+                <article class="card" data-title="Key Multiples" data-eyebrow="Valuation · Topic 05" data-desc="EV/EBITDA, P/E, EV/Revenue — reading the market's pricing signals." data-time="12 min read" data-level="Intermediate" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">05 / 06</span><span class="card-time">12 min</span></div>
+                  <h3 class="card-title">Key Multiples</h3>
+                  <p class="card-desc">EV/EBITDA, P/E, EV/Revenue — reading the market's pricing signals.</p>
+                  <div class="card-tag"><span class="dot"></span>Intermediate</div>
+                </article>
+                <article class="card" data-title="Sensitivity Analysis" data-eyebrow="Valuation · Topic 06" data-desc="How small changes in assumptions can dramatically affect valuation output." data-time="11 min read" data-level="Advanced" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">06 / 06</span><span class="card-time">11 min</span></div>
+                  <h3 class="card-title">Sensitivity Analysis</h3>
+                  <p class="card-desc">How small changes in assumptions can dramatically affect valuation output.</p>
+                  <div class="card-tag"><span class="dot"></span>Advanced</div>
+                </article>
+              </div>
+            </div>
+            <div class="slider-page">
+              <p class="slider-label">Discount Rate</p>
+              <div class="topic-grid">
+                <article class="card" data-title="WACC" data-eyebrow="Valuation · Topic 07" data-desc="Weighted Average Cost of Capital — the discount rate that ties it all together." data-time="15 min read" data-level="Intermediate" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">01 / 06</span><span class="card-time">15 min</span></div>
+                  <h3 class="card-title">WACC</h3>
+                  <p class="card-desc">Weighted Average Cost of Capital — the discount rate that ties it all together.</p>
+                  <div class="card-tag"><span class="dot"></span>Intermediate</div>
+                </article>
+                <article class="card" data-title="Beta" data-eyebrow="Valuation · Topic 08" data-desc="Measuring a stock's volatility relative to the market." data-time="12 min read" data-level="Intermediate" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">02 / 06</span><span class="card-time">12 min</span></div>
+                  <h3 class="card-title">Beta</h3>
+                  <p class="card-desc">Measuring a stock's volatility relative to the market.</p>
+                  <div class="card-tag"><span class="dot"></span>Intermediate</div>
+                </article>
+                <article class="card" data-title="Cost of Equity (CAPM)" data-eyebrow="Valuation · Topic 09" data-desc="How to estimate the return required by equity investors." data-time="13 min read" data-level="Intermediate" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">03 / 06</span><span class="card-time">13 min</span></div>
+                  <h3 class="card-title">Cost of Equity (CAPM)</h3>
+                  <p class="card-desc">How to estimate the return required by equity investors.</p>
+                  <div class="card-tag"><span class="dot"></span>Intermediate</div>
+                </article>
+                <article class="card" data-title="Cost of Debt" data-eyebrow="Valuation · Topic 10" data-desc="The effective rate a company pays on its debt obligations." data-time="10 min read" data-level="Intermediate" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">04 / 06</span><span class="card-time">10 min</span></div>
+                  <h3 class="card-title">Cost of Debt</h3>
+                  <p class="card-desc">The effective rate a company pays on its debt obligations.</p>
+                  <div class="card-tag"><span class="dot"></span>Intermediate</div>
+                </article>
+                <article class="card" data-title="Risk-Free Rate" data-eyebrow="Valuation · Topic 11" data-desc="The baseline return used in every discount rate calculation." data-time="9 min read" data-level="Intro" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">05 / 06</span><span class="card-time">9 min</span></div>
+                  <h3 class="card-title">Risk-Free Rate</h3>
+                  <p class="card-desc">The baseline return used in every discount rate calculation.</p>
+                  <div class="card-tag"><span class="dot"></span>Intro level</div>
+                </article>
+                <article class="card" data-title="Equity Risk Premium" data-eyebrow="Valuation · Topic 12" data-desc="The extra return investors demand for holding equities over risk-free assets." data-time="11 min read" data-level="Intermediate" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">06 / 06</span><span class="card-time">11 min</span></div>
+                  <h3 class="card-title">Equity Risk Premium</h3>
+                  <p class="card-desc">The extra return investors demand for holding equities over risk-free assets.</p>
+                  <div class="card-tag"><span class="dot"></span>Intermediate</div>
+                </article>
+              </div>
+            </div>
+            <div class="slider-page">
+              <p class="slider-label">Capital Structure</p>
+              <div class="topic-grid">
+                <article class="card" data-title="Capital Structure" data-eyebrow="Valuation · Topic 13" data-desc="How companies balance debt and equity to finance their operations." data-time="12 min read" data-level="Intermediate" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">01 / 04</span><span class="card-time">12 min</span></div>
+                  <h3 class="card-title">Capital Structure</h3>
+                  <p class="card-desc">How companies balance debt and equity to finance their operations.</p>
+                  <div class="card-tag"><span class="dot"></span>Intermediate</div>
+                </article>
+                <article class="card" data-title="Debt vs Equity" data-eyebrow="Valuation · Topic 14" data-desc="The trade-offs between debt and equity financing." data-time="11 min read" data-level="Intermediate" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">02 / 04</span><span class="card-time">11 min</span></div>
+                  <h3 class="card-title">Debt vs Equity</h3>
+                  <p class="card-desc">The trade-offs between debt and equity financing.</p>
+                  <div class="card-tag"><span class="dot"></span>Intermediate</div>
+                </article>
+                <article class="card" data-title="Leverage" data-eyebrow="Valuation · Topic 15" data-desc="How debt amplifies returns — and risks." data-time="10 min read" data-level="Intermediate" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">03 / 04</span><span class="card-time">10 min</span></div>
+                  <h3 class="card-title">Leverage</h3>
+                  <p class="card-desc">How debt amplifies returns — and risks.</p>
+                  <div class="card-tag"><span class="dot"></span>Intermediate</div>
+                </article>
+                <article class="card" data-title="Terminal Value" data-eyebrow="Valuation · Topic 16" data-desc="Estimating the value of a company beyond the forecast period." data-time="13 min read" data-level="Advanced" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">04 / 04</span><span class="card-time">13 min</span></div>
+                  <h3 class="card-title">Terminal Value</h3>
+                  <p class="card-desc">Estimating the value of a company beyond the forecast period.</p>
+                  <div class="card-tag"><span class="dot"></span>Advanced</div>
+                </article>
+              </div>
+            </div>
+          </div>
+          <div class="slider-nav">
+            <button class="slider-btn" onclick="moveSlider('valuation', -1)">←</button>
+            <div class="slider-dots" id="dots-valuation">
+              <button class="slider-dot active" onclick="goToSlide('valuation', 0)"></button>
+              <button class="slider-dot" onclick="goToSlide('valuation', 1)"></button>
+              <button class="slider-dot" onclick="goToSlide('valuation', 2)"></button>
+            </div>
+            <button class="slider-btn" onclick="moveSlider('valuation', 1)">→</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- FINANCE CAREERS -->
+      <section class="topic-section" id="careers">
+        <div class="section-head">
+          <div class="title-group">
+            <span class="section-num">§03</span>
+            <h2 class="section-title">Finance Careers</h2>
+          </div>
+          <div style="display:flex;align-items:center;gap:24px;">
+            <span class="section-sub">Paths within finance</span>
+            <a href="finance-careers/index.html" style="font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);font-weight:500;">View all →</a>
+          </div>
+        </div>
+        <div class="slider-container" id="slider-careers">
+          <div class="slider-track" id="track-careers">
+            <div class="slider-page">
+              <p class="slider-label">Investment Banking</p>
+              <div class="topic-grid">
+                <article class="card" data-title="What is Investment Banking?" data-eyebrow="IB · Topic 01" data-desc="The role of investment banks in capital markets and corporate transactions." data-time="12 min read" data-level="Intro" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">01 / 06</span><span class="card-time">12 min</span></div>
+                  <h3 class="card-title">What is Investment Banking?</h3>
+                  <p class="card-desc">The role of investment banks in capital markets and corporate transactions.</p>
+                  <div class="card-tag"><span class="dot"></span>Intro level</div>
+                </article>
+                <article class="card" data-title="M&A Deal Process" data-eyebrow="IB · Topic 02" data-desc="From LOI to close — the anatomy of a merger or acquisition." data-time="16 min read" data-level="Intermediate" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">02 / 06</span><span class="card-time">16 min</span></div>
+                  <h3 class="card-title">M&A Deal Process</h3>
+                  <p class="card-desc">From LOI to close — the anatomy of a merger or acquisition.</p>
+                  <div class="card-tag"><span class="dot"></span>Intermediate</div>
+                </article>
+                <article class="card" data-title="LBO — Leveraged Buyout" data-eyebrow="IB · Topic 03" data-desc="How private equity funds a buyout and generates returns." data-time="17 min read" data-level="Intermediate" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">03 / 06</span><span class="card-time">17 min</span></div>
+                  <h3 class="card-title">LBO — Leveraged Buyout</h3>
+                  <p class="card-desc">How private equity funds a buyout and generates returns.</p>
+                  <div class="card-tag"><span class="dot"></span>Intermediate</div>
+                </article>
+                <article class="card" data-title="IPO & Capital Markets" data-eyebrow="IB · Topic 04" data-desc="Taking a company public — the process, the players and the pricing." data-time="14 min read" data-level="Intermediate" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">04 / 06</span><span class="card-time">14 min</span></div>
+                  <h3 class="card-title">IPO & Capital Markets</h3>
+                  <p class="card-desc">Taking a company public — the process, the players and the pricing.</p>
+                  <div class="card-tag"><span class="dot"></span>Intermediate</div>
+                </article>
+                <article class="card" data-title="Pitch Book Basics" data-eyebrow="IB · Topic 05" data-desc="What goes into an IB pitch book and how analysts build them." data-time="13 min read" data-level="Intro" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">05 / 06</span><span class="card-time">13 min</span></div>
+                  <h3 class="card-title">Pitch Book Basics</h3>
+                  <p class="card-desc">What goes into an IB pitch book and how analysts build them.</p>
+                  <div class="card-tag"><span class="dot"></span>Intro level</div>
+                </article>
+                <article class="card" data-title="Life as an IB Analyst" data-eyebrow="IB · Topic 06" data-desc="The day-to-day reality of working in investment banking." data-time="10 min read" data-level="Intro" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">06 / 06</span><span class="card-time">10 min</span></div>
+                  <h3 class="card-title">Life as an IB Analyst</h3>
+                  <p class="card-desc">The day-to-day reality of working in investment banking.</p>
+                  <div class="card-tag"><span class="dot"></span>Intro level</div>
+                </article>
+              </div>
+            </div>
+            <div class="slider-page">
+              <p class="slider-label">Corporate Finance</p>
+              <div class="topic-grid">
+                <article class="card" data-title="What is Corporate Finance?" data-eyebrow="Corp Finance · Topic 01" data-desc="How companies make financial decisions to maximize shareholder value." data-time="11 min read" data-level="Intro" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">01 / 06</span><span class="card-time">11 min</span></div>
+                  <h3 class="card-title">What is Corporate Finance?</h3>
+                  <p class="card-desc">How companies make financial decisions to maximize shareholder value.</p>
+                  <div class="card-tag"><span class="dot"></span>Intro level</div>
+                </article>
+                <article class="card" data-title="Capital Structure" data-eyebrow="Corp Finance · Topic 02" data-desc="How companies balance debt and equity to finance their operations." data-time="12 min read" data-level="Intermediate" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">02 / 06</span><span class="card-time">12 min</span></div>
+                  <h3 class="card-title">Capital Structure</h3>
+                  <p class="card-desc">How companies balance debt and equity to finance their operations.</p>
+                  <div class="card-tag"><span class="dot"></span>Intermediate</div>
+                </article>
+                <article class="card" data-title="Dividend Policy" data-eyebrow="Corp Finance · Topic 03" data-desc="When and why companies return cash to shareholders." data-time="10 min read" data-level="Intermediate" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">03 / 06</span><span class="card-time">10 min</span></div>
+                  <h3 class="card-title">Dividend Policy</h3>
+                  <p class="card-desc">When and why companies return cash to shareholders.</p>
+                  <div class="card-tag"><span class="dot"></span>Intermediate</div>
+                </article>
+                <article class="card" data-title="Working Capital Management" data-eyebrow="Corp Finance · Topic 04" data-desc="Managing short-term assets and liabilities to keep the business running." data-time="11 min read" data-level="Intermediate" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">04 / 06</span><span class="card-time">11 min</span></div>
+                  <h3 class="card-title">Working Capital Management</h3>
+                  <p class="card-desc">Managing short-term assets and liabilities to keep the business running.</p>
+                  <div class="card-tag"><span class="dot"></span>Intermediate</div>
+                </article>
+                <article class="card" data-title="Budgeting & Financial Planning" data-eyebrow="Corp Finance · Topic 05" data-desc="How companies plan, forecast and allocate resources." data-time="12 min read" data-level="Intro" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">05 / 06</span><span class="card-time">12 min</span></div>
+                  <h3 class="card-title">Budgeting & Financial Planning</h3>
+                  <p class="card-desc">How companies plan, forecast and allocate resources.</p>
+                  <div class="card-tag"><span class="dot"></span>Intro level</div>
+                </article>
+                <article class="card" data-title="Life in Corporate Finance" data-eyebrow="Corp Finance · Topic 06" data-desc="The day-to-day reality of working inside a company's finance team." data-time="10 min read" data-level="Intro" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">06 / 06</span><span class="card-time">10 min</span></div>
+                  <h3 class="card-title">Life in Corporate Finance</h3>
+                  <p class="card-desc">The day-to-day reality of working inside a company's finance team.</p>
+                  <div class="card-tag"><span class="dot"></span>Intro level</div>
+                </article>
+              </div>
+            </div>
+            <div class="slider-page">
+              <p class="slider-label">Credit Analysis</p>
+              <div class="topic-grid">
+                <article class="card" data-title="What is Credit Analysis?" data-eyebrow="Credit · Topic 01" data-desc="How banks and investors assess the risk of lending money." data-time="11 min read" data-level="Intro" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">01 / 06</span><span class="card-time">11 min</span></div>
+                  <h3 class="card-title">What is Credit Analysis?</h3>
+                  <p class="card-desc">How banks and investors assess the risk of lending money.</p>
+                  <div class="card-tag"><span class="dot"></span>Intro level</div>
+                </article>
+                <article class="card" data-title="Credit Metrics & Ratios" data-eyebrow="Credit · Topic 02" data-desc="The key ratios used to evaluate a borrower's creditworthiness." data-time="13 min read" data-level="Intermediate" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">02 / 06</span><span class="card-time">13 min</span></div>
+                  <h3 class="card-title">Credit Metrics & Ratios</h3>
+                  <p class="card-desc">The key ratios used to evaluate a borrower's creditworthiness.</p>
+                  <div class="card-tag"><span class="dot"></span>Intermediate</div>
+                </article>
+                <article class="card" data-title="Rating Agencies" data-eyebrow="Credit · Topic 03" data-desc="How Moody's, S&P and Fitch assess credit risk." data-time="12 min read" data-level="Intermediate" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">03 / 06</span><span class="card-time">12 min</span></div>
+                  <h3 class="card-title">Rating Agencies</h3>
+                  <p class="card-desc">How Moody's, S&P and Fitch assess credit risk.</p>
+                  <div class="card-tag"><span class="dot"></span>Intermediate</div>
+                </article>
+                <article class="card" data-title="Leveraged Finance" data-eyebrow="Credit · Topic 04" data-desc="Lending to highly leveraged companies — risks, returns and structures." data-time="15 min read" data-level="Advanced" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">04 / 06</span><span class="card-time">15 min</span></div>
+                  <h3 class="card-title">Leveraged Finance</h3>
+                  <p class="card-desc">Lending to highly leveraged companies — risks, returns and structures.</p>
+                  <div class="card-tag"><span class="dot"></span>Advanced</div>
+                </article>
+                <article class="card" data-title="Distressed Debt" data-eyebrow="Credit · Topic 05" data-desc="Investing in companies in financial difficulty — risks and opportunities." data-time="14 min read" data-level="Advanced" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">05 / 06</span><span class="card-time">14 min</span></div>
+                  <h3 class="card-title">Distressed Debt</h3>
+                  <p class="card-desc">Investing in companies in financial difficulty — risks and opportunities.</p>
+                  <div class="card-tag"><span class="dot"></span>Advanced</div>
+                </article>
+                <article class="card" data-title="Life in Credit Analysis" data-eyebrow="Credit · Topic 06" data-desc="The day-to-day reality of working as a credit analyst." data-time="10 min read" data-level="Intro" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">06 / 06</span><span class="card-time">10 min</span></div>
+                  <h3 class="card-title">Life in Credit Analysis</h3>
+                  <p class="card-desc">The day-to-day reality of working as a credit analyst.</p>
+                  <div class="card-tag"><span class="dot"></span>Intro level</div>
+                </article>
+              </div>
+            </div>
+          </div>
+          <div class="slider-nav">
+            <button class="slider-btn" onclick="moveSlider('careers', -1)">←</button>
+            <div class="slider-dots" id="dots-careers">
+              <button class="slider-dot active" onclick="goToSlide('careers', 0)"></button>
+              <button class="slider-dot" onclick="goToSlide('careers', 1)"></button>
+              <button class="slider-dot" onclick="goToSlide('careers', 2)"></button>
+            </div>
+            <button class="slider-btn" onclick="moveSlider('careers', 1)">→</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- KEY INDICATORS -->
+      <section class="topic-section" id="indicators">
+        <div class="section-head">
+          <div class="title-group">
+            <span class="section-num">§04</span>
+            <h2 class="section-title">Key Indicators & Metrics</h2>
+          </div>
+          <div style="display:flex;align-items:center;gap:24px;">
+            <span class="section-sub">The numbers that matter</span>
+            <a href="key-indicators/index.html" style="font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);font-weight:500;">View all →</a>
+          </div>
+        </div>
+        <div class="slider-container" id="slider-indicators">
+          <div class="slider-track" id="track-indicators">
+            <div class="slider-page">
+              <p class="slider-label">Profitability</p>
+              <div class="topic-grid">
+                <article class="card" data-title="EBITDA & EBIT" data-eyebrow="Indicators · Topic 01" data-desc="What they measure, how they differ and why they matter in valuation." data-time="11 min read" data-level="Intro" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">01 / 06</span><span class="card-time">11 min</span></div>
+                  <h3 class="card-title">EBITDA & EBIT</h3>
+                  <p class="card-desc">What they measure, how they differ and why they matter in valuation.</p>
+                  <div class="card-tag"><span class="dot"></span>Intro level</div>
+                </article>
+                <article class="card" data-title="Gross Margin" data-eyebrow="Indicators · Topic 02" data-desc="The first line of profitability — revenue minus cost of goods sold." data-time="9 min read" data-level="Intro" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">02 / 06</span><span class="card-time">9 min</span></div>
+                  <h3 class="card-title">Gross Margin</h3>
+                  <p class="card-desc">The first line of profitability — revenue minus cost of goods sold.</p>
+                  <div class="card-tag"><span class="dot"></span>Intro level</div>
+                </article>
+                <article class="card" data-title="EBITDA Margin" data-eyebrow="Indicators · Topic 03" data-desc="Measuring operational efficiency before interest, taxes and non-cash items." data-time="10 min read" data-level="Intro" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">03 / 06</span><span class="card-time">10 min</span></div>
+                  <h3 class="card-title">EBITDA Margin</h3>
+                  <p class="card-desc">Measuring operational efficiency before interest, taxes and non-cash items.</p>
+                  <div class="card-tag"><span class="dot"></span>Intro level</div>
+                </article>
+                <article class="card" data-title="Net Margin" data-eyebrow="Indicators · Topic 04" data-desc="The bottom line — what's left after all expenses are paid." data-time="9 min read" data-level="Intro" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">04 / 06</span><span class="card-time">9 min</span></div>
+                  <h3 class="card-title">Net Margin</h3>
+                  <p class="card-desc">The bottom line — what's left after all expenses are paid.</p>
+                  <div class="card-tag"><span class="dot"></span>Intro level</div>
+                </article>
+                <article class="card" data-title="Return on Equity (ROE)" data-eyebrow="Indicators · Topic 05" data-desc="How efficiently a company generates profit from shareholders' equity." data-time="11 min read" data-level="Intermediate" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">05 / 06</span><span class="card-time">11 min</span></div>
+                  <h3 class="card-title">Return on Equity (ROE)</h3>
+                  <p class="card-desc">How efficiently a company generates profit from shareholders' equity.</p>
+                  <div class="card-tag"><span class="dot"></span>Intermediate</div>
+                </article>
+                <article class="card" data-title="Return on Assets (ROA)" data-eyebrow="Indicators · Topic 06" data-desc="How efficiently a company uses its assets to generate profit." data-time="10 min read" data-level="Intermediate" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">06 / 06</span><span class="card-time">10 min</span></div>
+                  <h3 class="card-title">Return on Assets (ROA)</h3>
+                  <p class="card-desc">How efficiently a company uses its assets to generate profit.</p>
+                  <div class="card-tag"><span class="dot"></span>Intermediate</div>
+                </article>
+              </div>
+            </div>
+            <div class="slider-page">
+              <p class="slider-label">Returns & Leverage</p>
+              <div class="topic-grid">
+                <article class="card" data-title="IRR — Internal Rate of Return" data-eyebrow="Indicators · Topic 07" data-desc="How investors measure the profitability of an investment over time." data-time="13 min read" data-level="Intermediate" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">01 / 06</span><span class="card-time">13 min</span></div>
+                  <h3 class="card-title">IRR — Internal Rate of Return</h3>
+                  <p class="card-desc">How investors measure the profitability of an investment over time.</p>
+                  <div class="card-tag"><span class="dot"></span>Intermediate</div>
+                </article>
+                <article class="card" data-title="NPV — Net Present Value" data-eyebrow="Indicators · Topic 08" data-desc="The value of future cash flows in today's dollars." data-time="12 min read" data-level="Intermediate" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">02 / 06</span><span class="card-time">12 min</span></div>
+                  <h3 class="card-title">NPV — Net Present Value</h3>
+                  <p class="card-desc">The value of future cash flows in today's dollars.</p>
+                  <div class="card-tag"><span class="dot"></span>Intermediate</div>
+                </article>
+                <article class="card" data-title="MOIC" data-eyebrow="Indicators · Topic 09" data-desc="How much money was made relative to how much was invested." data-time="9 min read" data-level="Intermediate" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">03 / 06</span><span class="card-time">9 min</span></div>
+                  <h3 class="card-title">MOIC</h3>
+                  <p class="card-desc">How much money was made relative to how much was invested.</p>
+                  <div class="card-tag"><span class="dot"></span>Intermediate</div>
+                </article>
+                <article class="card" data-title="Net Debt" data-eyebrow="Indicators · Topic 10" data-desc="Total debt minus cash — the real debt burden of a company." data-time="9 min read" data-level="Intro" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">04 / 06</span><span class="card-time">9 min</span></div>
+                  <h3 class="card-title">Net Debt</h3>
+                  <p class="card-desc">Total debt minus cash — the real debt burden of a company.</p>
+                  <div class="card-tag"><span class="dot"></span>Intro level</div>
+                </article>
+                <article class="card" data-title="Leverage Ratios" data-eyebrow="Indicators · Topic 11" data-desc="Net Debt/EBITDA and other ratios used to measure a company's debt load." data-time="11 min read" data-level="Intermediate" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">05 / 06</span><span class="card-time">11 min</span></div>
+                  <h3 class="card-title">Leverage Ratios</h3>
+                  <p class="card-desc">Net Debt/EBITDA and other ratios used to measure a company's debt load.</p>
+                  <div class="card-tag"><span class="dot"></span>Intermediate</div>
+                </article>
+                <article class="card" data-title="Interest Coverage Ratio" data-eyebrow="Indicators · Topic 12" data-desc="Can the company afford to pay its interest expenses?" data-time="9 min read" data-level="Intermediate" data-updated="Apr 2026">
+                  <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  <div class="card-top"><span class="card-num">06 / 06</span><span class="card-time">9 min</span></div>
+                  <h3 class="card-title">Interest Coverage Ratio</h3>
+                  <p class="card-desc">Can the company afford to pay its interest expenses?</p>
+                  <div class="card-tag"><span class="dot"></span>Intermediate</div>
+                </article>
+              </div>
+            </div>
+          </div>
+          <div class="slider-nav">
+            <button class="slider-btn" onclick="moveSlider('indicators', -1)">←</button>
+            <div class="slider-dots" id="dots-indicators">
+              <button class="slider-dot active" onclick="goToSlide('indicators', 0)"></button>
+              <button class="slider-dot" onclick="goToSlide('indicators', 1)"></button>
+            </div>
+            <button class="slider-btn" onclick="moveSlider('indicators', 1)">→</button>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- SIDEBAR -->
+    <aside>
+      <div class="side-box">
+        <div class="side-title">Related Thinkers</div>
+        <div class="thinker">
+          <div class="thinker-portrait">AD</div>
+          <div class="thinker-body">
+            <p class="thinker-name">Aswath Damodaran</p>
+            <p class="thinker-years">1957 – present · Valuation</p>
+            <p class="thinker-desc">The dean of valuation — making DCF accessible to everyone with a spreadsheet and a question.</p>
+          </div>
+        </div>
+        <div class="thinker">
+          <div class="thinker-portrait">BG</div>
+          <div class="thinker-body">
+            <p class="thinker-name">Benjamin Graham</p>
+            <p class="thinker-years">1894 – 1976 · Value Investing</p>
+            <p class="thinker-desc">The father of value investing. Taught the world that price and value are not the same thing.</p>
+          </div>
+        </div>
+        <div class="thinker">
+          <div class="thinker-portrait">MM</div>
+          <div class="thinker-body">
+            <p class="thinker-name">Merton Miller</p>
+            <p class="thinker-years">1923 – 2000 · Corp Finance</p>
+            <p class="thinker-desc">With Modigliani, proved that capital structure is irrelevant — and spent decades explaining why it isn't.</p>
+          </div>
+        </div>
+        <a class="side-cta" href="../thinkers/index.html">
+          Browse all thinkers
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
       </div>
-
-      <div class="slider-container" id="slider-accounting">
-        <div class="slider-track" id="track-accounting">
-
-          <!-- PAGE 1: Financial Statements -->
-          <div class="slider-page">
-            <p class="slider-label">Financial Statements</p>
-            <div class="cards-grid">
-              <a href="#" class="card">
-                <h3>The Three Financial Statements</h3>
-                <p>Income statement, balance sheet, cash flow — and how they talk to each other.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Income Statement</h3>
-                <p>Revenue, expenses and profit — reading a company's performance over time.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Balance Sheet</h3>
-                <p>Assets, liabilities and equity — a snapshot of what a company owns and owes.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Cash Flow Statement</h3>
-                <p>Where the cash actually goes — operating, investing and financing activities.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>How the Statements Connect</h3>
-                <p>Net income, depreciation, capex — how changes in one statement flow into another.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Financial Ratios</h3>
-                <p>Liquidity, profitability and leverage ratios every analyst should know.</p>
-                <span class="card-link">Read →</span>
-              </a>
-            </div>
-          </div>
-
-          <!-- PAGE 2: Key Concepts -->
-          <div class="slider-page">
-            <p class="slider-label">Key Concepts</p>
-            <div class="cards-grid">
-              <a href="#" class="card">
-                <h3>Accrual vs Cash Accounting</h3>
-                <p>Why revenue recognition matters and how it affects reported earnings.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Depreciation & Amortization</h3>
-                <p>How assets lose value over time and why D&A matters in modeling.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Working Capital</h3>
-                <p>The difference between current assets and liabilities — and why it matters.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>CapEx</h3>
-                <p>Capital expenditures — investing in the future of the business.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Goodwill & Intangibles</h3>
-                <p>What happens on the balance sheet when you overpay for an acquisition.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Deferred Tax</h3>
-                <p>The gap between accounting income and taxable income.</p>
-                <span class="card-link">Read →</span>
-              </a>
-            </div>
-          </div>
-
-        </div>
-        <div class="slider-nav">
-          <button class="slider-btn" onclick="moveSlider('accounting', -1)">←</button>
-          <div class="slider-dots" id="dots-accounting">
-            <button class="slider-dot active" onclick="goToSlide('accounting', 0)"></button>
-            <button class="slider-dot" onclick="goToSlide('accounting', 1)"></button>
-          </div>
-          <button class="slider-btn" onclick="moveSlider('accounting', 1)">→</button>
-        </div>
-      </div>
-
-    </section>
-
-    <!-- VALUATION -->
-    <section class="topic-section topic-section-alt">
-      <div class="section-header">
-        <div>
-          <h2 class="section-title">Valuation</h2>
-          <p class="section-subtitle">How to estimate what a company is truly worth.</p>
-        </div>
-        <a href="valuation/index.html">View all →</a>
-      </div>
-
-      <div class="slider-container" id="slider-valuation">
-        <div class="slider-track" id="track-valuation">
-
-          <!-- PAGE 1: Valuation Metrics -->
-          <div class="slider-page">
-            <p class="slider-label">Valuation Metrics</p>
-            <div class="cards-grid">
-              <a href="#" class="card">
-                <h3>Introduction to Valuation</h3>
-                <p>What valuation is, why it matters and the main methodologies.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>DCF — Discounted Cash Flow</h3>
-                <p>The gold standard of valuation — projecting cash flows and discounting them to present value.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Comparable Companies (Comps)</h3>
-                <p>How to value a company by comparing it to its peers.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Precedent Transactions</h3>
-                <p>Using past M&A deals to benchmark valuation.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Key Multiples</h3>
-                <p>EV/EBITDA, P/E, EV/Revenue — reading the market's pricing signals.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Sensitivity Analysis</h3>
-                <p>How small changes in assumptions can dramatically affect valuation output.</p>
-                <span class="card-link">Read →</span>
-              </a>
-            </div>
-          </div>
-
-          <!-- PAGE 2: Discount Rate -->
-          <div class="slider-page">
-            <p class="slider-label">Discount Rate</p>
-            <div class="cards-grid">
-              <a href="#" class="card">
-                <h3>WACC</h3>
-                <p>Weighted Average Cost of Capital — the discount rate that ties it all together.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Beta</h3>
-                <p>Measuring a stock's volatility relative to the market.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Cost of Equity </h3>
-                <p>How to estimate the return required by equity investors.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Cost of Debt</h3>
-                <p>The effective rate a company pays on its debt obligations.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Risk-Free Rate</h3>
-                <p>The baseline return used in every discount rate calculation.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Equity Risk Premium</h3>
-                <p>The extra return investors demand for holding equities over risk-free assets.</p>
-                <span class="card-link">Read →</span>
-              </a>
-            </div>
-          </div>
-
-          <!-- PAGE 3: Capital Structure -->
-          <div class="slider-page">
-            <p class="slider-label">Capital Structure</p>
-            <div class="cards-grid">
-              <a href="#" class="card">
-                <h3>Capital Structure</h3>
-                <p>How companies balance debt and equity to finance their operations.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Debt vs Equity</h3>
-                <p>The trade-offs between debt and equity financing.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Leverage</h3>
-                <p>How debt amplifies returns — and risks.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Terminal Value</h3>
-                <p>Estimating the value of a company beyond the forecast period.</p>
-                <span class="card-link">Read →</span>
-              </a>
-            </div>
-          </div>
-
-        </div>
-        <div class="slider-nav">
-          <button class="slider-btn" onclick="moveSlider('valuation', -1)">←</button>
-          <div class="slider-dots" id="dots-valuation">
-            <button class="slider-dot active" onclick="goToSlide('valuation', 0)"></button>
-            <button class="slider-dot" onclick="goToSlide('valuation', 1)"></button>
-            <button class="slider-dot" onclick="goToSlide('valuation', 2)"></button>
-          </div>
-          <button class="slider-btn" onclick="moveSlider('valuation', 1)">→</button>
-        </div>
-      </div>
-
-    </section>
-
-
-    <!-- FINANCE CAREERS -->
-    <section class="topic-section">
-      <div class="section-header">
-        <div>
-          <h2 class="section-title">Finance Careers</h2>
-          <p class="section-subtitle">Explore the main paths within finance — from IB to corporate finance and credit.</p>
-        </div>
-        <a href="finance-careers/index.html">View all →</a>
-      </div>
-
-      <div class="slider-container" id="slider-careers">
-        <div class="slider-track" id="track-careers">
-
-          <!-- PAGE 1: Investment Banking -->
-          <div class="slider-page">
-            <p class="slider-label">Investment Banking</p>
-            <div class="cards-grid">
-              <a href="#" class="card">
-                <h3>What is Investment Banking?</h3>
-                <p>The role of investment banks in capital markets and corporate transactions.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>M&A Deal Process</h3>
-                <p>From LOI to close — the anatomy of a merger or acquisition.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>LBO — Leveraged Buyout</h3>
-                <p>How private equity funds a buyout and generates returns.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>IPO & Capital Markets</h3>
-                <p>Taking a company public — the process, the players and the pricing.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Pitch Book Basics</h3>
-                <p>What goes into an IB pitch book and how analysts build them.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Life as an IB Analyst</h3>
-                <p>The day-to-day reality of working in investment banking.</p>
-                <span class="card-link">Read →</span>
-              </a>
-            </div>
-          </div>
-
-          <!-- PAGE 2: Corporate Finance -->
-          <div class="slider-page">
-            <p class="slider-label">Corporate Finance</p>
-            <div class="cards-grid">
-              <a href="#" class="card">
-                <h3>What is Corporate Finance?</h3>
-                <p>How companies make financial decisions to maximize shareholder value.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Capital Structure</h3>
-                <p>How companies balance debt and equity to finance their operations.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Dividend Policy</h3>
-                <p>When and why companies return cash to shareholders.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Working Capital Management</h3>
-                <p>Managing short-term assets and liabilities to keep the business running.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Budgeting & Financial Planning</h3>
-                <p>How companies plan, forecast and allocate resources.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Life in Corporate Finance</h3>
-                <p>The day-to-day reality of working inside a company's finance team.</p>
-                <span class="card-link">Read →</span>
-              </a>
-            </div>
-          </div>
-
-          <!-- PAGE 3: Credit Analysis -->
-          <div class="slider-page">
-            <p class="slider-label">Credit Analysis</p>
-            <div class="cards-grid">
-              <a href="#" class="card">
-                <h3>What is Credit Analysis?</h3>
-                <p>How banks and investors assess the risk of lending money.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Credit Metrics & Ratios</h3>
-                <p>The key ratios used to evaluate a borrower's creditworthiness.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Rating Agencies</h3>
-                <p>How Moody's, S&P and Fitch assess credit risk.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Leveraged Finance</h3>
-                <p>Lending to highly leveraged companies — risks, returns and structures.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Distressed Debt</h3>
-                <p>Investing in companies in financial difficulty — risks and opportunities.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Life in Credit Analysis</h3>
-                <p>The day-to-day reality of working as a credit analyst.</p>
-                <span class="card-link">Read →</span>
-              </a>
-            </div>
-          </div>
-
-        </div>
-        <div class="slider-nav">
-          <button class="slider-btn" onclick="moveSlider('careers', -1)">←</button>
-          <div class="slider-dots" id="dots-careers">
-            <button class="slider-dot active" onclick="goToSlide('careers', 0)"></button>
-            <button class="slider-dot" onclick="goToSlide('careers', 1)"></button>
-            <button class="slider-dot" onclick="goToSlide('careers', 2)"></button>
-          </div>
-          <button class="slider-btn" onclick="moveSlider('careers', 1)">→</button>
-        </div>
-      </div>
-
-    </section>
-
-    <!-- KEY INDICATORS -->
-    <!-- KEY INDICATORS -->
-    <section class="topic-section topic-section-alt">
-      <div class="section-header">
-        <div>
-          <h2 class="section-title">Key Indicators & Metrics</h2>
-          <p class="section-subtitle">The numbers that come up in every meeting, every model, every deal.</p>
-        </div>
-        <a href="key-indicators/index.html">View all →</a>
-      </div>
-
-      <div class="slider-container" id="slider-indicators">
-        <div class="slider-track" id="track-indicators">
-
-          <!-- PAGE 1: Profitability -->
-          <div class="slider-page">
-            <p class="slider-label">Profitability</p>
-            <div class="cards-grid">
-              <a href="#" class="card">
-                <h3>EBITDA & EBIT</h3>
-                <p>What they measure, how they differ and why they matter in valuation.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Gross Margin</h3>
-                <p>The first line of profitability — revenue minus cost of goods sold.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>EBITDA Margin</h3>
-                <p>Measuring operational efficiency before interest, taxes and non-cash items.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Net Margin</h3>
-                <p>The bottom line — what's left after all expenses are paid.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Return on Equity (ROE)</h3>
-                <p>How efficiently a company generates profit from shareholders' equity.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Return on Assets (ROA)</h3>
-                <p>How efficiently a company uses its assets to generate profit.</p>
-                <span class="card-link">Read →</span>
-              </a>
-            </div>
-          </div>
-
-          <!-- PAGE 2: Returns & Leverage -->
-          <div class="slider-page">
-            <p class="slider-label">Returns & Leverage</p>
-            <div class="cards-grid">
-              <a href="#" class="card">
-                <h3>IRR — Internal Rate of Return</h3>
-                <p>How investors measure the profitability of an investment over time.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>NPV — Net Present Value</h3>
-                <p>The value of future cash flows in today's dollars.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>MOIC — Multiple on Invested Capital</h3>
-                <p>How much money was made relative to how much was invested.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Net Debt</h3>
-                <p>Total debt minus cash — the real debt burden of a company.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Leverage Ratios</h3>
-                <p>Net Debt/EBITDA and other ratios used to measure a company's debt load.</p>
-                <span class="card-link">Read →</span>
-              </a>
-              <a href="#" class="card">
-                <h3>Interest Coverage Ratio</h3>
-                <p>Can the company afford to pay its interest expenses?</p>
-                <span class="card-link">Read →</span>
-              </a>
-            </div>
-          </div>
-
-        </div>
-        <div class="slider-nav">
-          <button class="slider-btn" onclick="moveSlider('indicators', -1)">←</button>
-          <div class="slider-dots" id="dots-indicators">
-            <button class="slider-dot active" onclick="goToSlide('indicators', 0)"></button>
-            <button class="slider-dot" onclick="goToSlide('indicators', 1)"></button>
-          </div>
-          <button class="slider-btn" onclick="moveSlider('indicators', 1)">→</button>
-        </div>
-      </div>
-
-    </section>
-
-  </main>
+    </aside>
+  </div>
 
   <!-- AD BANNER -->
-  <div class="ad-banner">
-    Advertisement
-  </div>
+  <div class="ad-banner">Advertisement</div>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p>© 2026 The Duck Intern — Finance & Economics Education</p>
-    <p style="margin-top: 0.5rem;">
-      <a href="../index.html">Home</a> ·
-      <a href="../finance/index.html">Finance</a> ·
-      <a href="../economics/index.html">Economics</a> ·
-      <a href="../thinkers/index.html">The Thinkers</a> ·
-      <a href="../books/index.html">Books</a> ·
-      <a href="../articles/index.html">Articles</a> ·
-      <a href="../templates/index.html">Templates</a>
-    </p>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h4>The Duck Intern</h4>
+        <p>A patient education in markets & minds — built for the intern who asks the obvious question and isn't afraid to get it wrong.</p>
+      </div>
+      <div>
+        <h4>Sections</h4>
+        <ul>
+          <li><a href="../finance/index.html">Finance</a></li>
+          <li><a href="../economics/index.html">Economics</a></li>
+          <li><a href="../thinkers/index.html">The Thinkers</a></li>
+          <li><a href="../index.html">Home</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="../articles/index.html">Must-Read Articles</a></li>
+          <li><a href="../books/index.html">Recommended Books</a></li>
+          <li><a href="../templates/index.html">Templates</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>About</h4>
+        <ul>
+          <li><a href="#">About The Duck Intern</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <span>© 2026 The Duck Intern</span>
+      <span>Finance & Economics Education</span>
+    </div>
   </footer>
+
+  <script>
+    const sliderState = {};
+    function initSlider(id){if(!sliderState[id])sliderState[id]=0}
+    function moveSlider(id,direction){
+      initSlider(id);
+      const track=document.getElementById('track-'+id);
+      const pages=track.querySelectorAll('.slider-page');
+      const total=pages.length;
+      sliderState[id]=(sliderState[id]+direction+total)%total;
+      updateSlider(id);
+    }
+    function goToSlide(id,index){
+      initSlider(id);
+      sliderState[id]=index;
+      updateSlider(id);
+    }
+    function updateSlider(id){
+      const track=document.getElementById('track-'+id);
+      const dots=document.querySelectorAll('#dots-'+id+' .slider-dot');
+      track.style.transform='translateX(-'+(sliderState[id]*100)+'%)';
+      dots.forEach((dot,i)=>{dot.classList.toggle('active',i===sliderState[id])});
+    }
+  </script>
 
 </body>
 </html>
-
-<script>
-  const sliderState = {};
-
-  function initSlider(id) {
-    if (!sliderState[id]) sliderState[id] = 0;
-  }
-
-  function moveSlider(id, direction) {
-    initSlider(id);
-    const track = document.getElementById('track-' + id);
-    const pages = track.querySelectorAll('.slider-page');
-    const total = pages.length;
-    sliderState[id] = (sliderState[id] + direction + total) % total;
-    updateSlider(id);
-  }
-
-  function goToSlide(id, index) {
-    initSlider(id);
-    sliderState[id] = index;
-    updateSlider(id);
-  }
-
-  function updateSlider(id) {
-    const track = document.getElementById('track-' + id);
-    const dots = document.querySelectorAll('#dots-' + id + ' .slider-dot');
-    track.style.transform = 'translateX(-' + (sliderState[id] * 100) + '%)';
-    dots.forEach((dot, i) => {
-      dot.classList.toggle('active', i === sliderState[id]);
-    });
-  }
-</script>

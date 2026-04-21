@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="[ARTICLE SUBTITLE] — The Duck Intern"/>
+  <title>[ARTICLE TITLE] | The Duck Intern</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <!-- ADJUST PATH: ../style.css or ../../style.css or ../../../style.css -->
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="icon" href="../assets/logo.png" type="image/png"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <!-- ADJUST PATHS below based on folder depth -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <div class="navbar-left">
+        <a href="../index.html" class="navbar-logo">
+          <img src="../assets/logo.png" alt="The Duck Intern Logo" />
+        </a>
+        <div class="navbar-logo-text">
+          <span class="brand-name">The Duck Intern</span>
+          <span class="brand-sub">An Education in Markets & Minds</span>
+        </div>
+      </div>
+      <ul class="navbar-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../finance/index.html">Finance</a></li>
+        <li><a href="../economics/index.html">Economics</a></li>
+        <li><a href="../thinkers/index.html">The Thinkers</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Explore ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="../articles/index.html">Must-Read Articles <span>→</span></a></li>
+            <li><a href="../books/index.html">Recommended Books <span>→</span></a></li>
+            <li><a href="../templates/index.html">Templates <span>→</span></a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="navbar-right">
+        <div class="navbar-search">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>
+          </svg>
+          <input placeholder="Search topics…" />
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- BREADCRUMB -->
+  <!-- Format: Home › Section › Subsection › Article Title -->
+  <div class="breadcrumb">
+    <a href="../index.html">Home</a>
+    <span class="sep">›</span>
+    <a href="#">[SECTION]</a>
+    <span class="sep">›</span>
+    <a href="#">[SUBSECTION]</a>
+    <span class="sep">›</span>
+    <span class="here">[ARTICLE TITLE]</span>
+  </div>
+
+  <!-- ARTICLE HEADER -->
+  <div class="article-header">
+    <div class="article-header-inner">
+      <div class="article-meta-top">
+        <span class="article-category">[SECTION] · [SUBSECTION]</span>
+      </div>
+      <h1 class="article-title">[ARTICLE TITLE]</h1>
+      <p class="article-subtitle">[ARTICLE SUBTITLE — one or two sentences describing what the reader will learn]</p>
+      <div class="article-meta-bar">
+        <div class="article-meta-item">
+          <span class="meta-label">Read time</span>
+          <span class="meta-value">[X min]</span>
+        </div>
+        <div class="article-meta-divider"></div>
+        <div class="article-meta-item">
+          <span class="meta-label">Level</span>
+          <span class="meta-value">[Intro / Intermediate / Advanced]</span>
+        </div>
+        <div class="article-meta-divider"></div>
+        <div class="article-meta-item">
+          <span class="meta-label">Last updated</span>
+          <span class="meta-value">[Month Year]</span>
+        </div>
+        <div class="article-meta-divider"></div>
+        <div class="article-meta-item">
+          <span class="meta-label">Subject</span>
+          <span class="meta-value">[Finance / Economics / Behavioral]</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ARTICLE BODY -->
+  <div class="article-body">
+
+    <!-- TABLE OF CONTENTS -->
+    <aside class="article-toc">
+      <div class="toc-inner">
+        <div class="toc-title">Table of Contents</div>
+        <nav class="toc-nav">
+          <!-- Add or remove links as needed. href must match section id below -->
+          <a href="#section-1" class="toc-link active">1. [Section 1 Title]</a>
+          <a href="#section-2" class="toc-link">2. [Section 2 Title]</a>
+          <a href="#section-3" class="toc-link">3. [Section 3 Title]</a>
+          <a href="#section-4" class="toc-link">4. [Section 4 Title]</a>
+          <a href="#section-5" class="toc-link">5. [Section 5 Title]</a>
+          <a href="#section-6" class="toc-link">6. [Section 6 Title]</a>
+          <a href="#bottom-line" class="toc-link">7. The Bottom Line</a>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- ARTICLE CONTENT -->
+    <article class="article-content">
+
+      <!-- SECTION 1 -->
+      <section id="section-1">
+        <h2>[Section 1 Title]</h2>
+        <p>[Section 1 content paragraph 1]</p>
+        <p>[Section 1 content paragraph 2]</p>
+
+        <!-- OPTIONAL: Callout box -->
+        <div class="article-callout">
+          <div class="callout-label">Key concept</div>
+          <p>[Callout text — use for definitions, key distinctions or important notes]</p>
+        </div>
+      </section>
+
+      <!-- SECTION 2 -->
+      <section id="section-2">
+        <h2>[Section 2 Title]</h2>
+        <p>[Section 2 content]</p>
+
+        <!-- OPTIONAL: Table -->
+        <div class="article-table-wrap">
+          <table class="article-table">
+            <thead>
+              <tr>
+                <th>[Column 1]</th>
+                <th>[Column 2]</th>
+                <th>[Column 3]</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>[Row 1, Col 1]</td>
+                <td>[Row 1, Col 2]</td>
+                <td>[Row 1, Col 3]</td>
+              </tr>
+              <tr>
+                <td>[Row 2, Col 1]</td>
+                <td>[Row 2, Col 2]</td>
+                <td>[Row 2, Col 3]</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- SECTION 3 -->
+      <section id="section-3">
+        <h2>[Section 3 Title]</h2>
+        <p>[Section 3 content]</p>
+
+        <!-- OPTIONAL: Accent callout -->
+        <div class="article-callout article-callout-accent">
+          <div class="callout-label">For the intern</div>
+          <p>[Practical tip or real-world application for the reader]</p>
+        </div>
+      </section>
+
+      <!-- SECTION 4 -->
+      <section id="section-4">
+        <h2>[Section 4 Title]</h2>
+        <p>[Section 4 content]</p>
+      </section>
+
+      <!-- SECTION 5 -->
+      <section id="section-5">
+        <h2>[Section 5 Title]</h2>
+        <p>[Section 5 content]</p>
+      </section>
+
+      <!-- SECTION 6 — KEY TERMS (optional, use when relevant) -->
+      <section id="section-6">
+        <h2>Key Terms to Know</h2>
+        <div class="article-terms">
+          <div class="term">
+            <div class="term-name">[Term 1]</div>
+            <div class="term-def">[Definition 1]</div>
+          </div>
+          <div class="term">
+            <div class="term-name">[Term 2]</div>
+            <div class="term-def">[Definition 2]</div>
+          </div>
+          <div class="term">
+            <div class="term-name">[Term 3]</div>
+            <div class="term-def">[Definition 3]</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BOTTOM LINE — always the last section -->
+      <section id="bottom-line">
+        <h2>The Bottom Line</h2>
+        <p>[Summary of the article — what the reader should take away]</p>
+        <p>[What comes next — link to the next article in the series]</p>
+
+        <div class="article-next">
+          <div class="article-next-label">Next in this series</div>
+          <a href="#" class="article-next-link">[Next Article Title] →</a>
+        </div>
+      </section>
+
+    </article>
+  </div>
+
+  <!-- AD BANNER -->
+  <div class="ad-banner">Advertisement</div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h4>The Duck Intern</h4>
+        <p>A patient education in markets & minds — built for the intern who asks the obvious question and isn't afraid to get it wrong.</p>
+      </div>
+      <div>
+        <h4>Sections</h4>
+        <ul>
+          <li><a href="../finance/index.html">Finance</a></li>
+          <li><a href="../economics/index.html">Economics</a></li>
+          <li><a href="../thinkers/index.html">The Thinkers</a></li>
+          <li><a href="../index.html">Home</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="../articles/index.html">Must-Read Articles</a></li>
+          <li><a href="../books/index.html">Recommended Books</a></li>
+          <li><a href="../templates/index.html">Templates</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>About</h4>
+        <ul>
+          <li><a href="#">About The Duck Intern</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <span>© 2026 The Duck Intern</span>
+      <span>Finance & Economics Education</span>
+    </div>
+  </footer>
+
+  <!-- TOC SCROLL SCRIPT -->
+  <script>
+    const sections = document.querySelectorAll('.article-content section');
+    const tocLinks = document.querySelectorAll('.toc-link');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          tocLinks.forEach(link => link.classList.remove('active'));
+          const activeLink = document.querySelector(`.toc-link[href="#${entry.target.id}"]`);
+          if (activeLink) activeLink.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-10% 0px -80% 0px' });
+
+    sections.forEach(section => observer.observe(section));
+  </script>
+
+</body>
+</html>

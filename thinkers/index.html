@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="The Thinkers — The Duck Intern"/>
+  <title>The Thinkers | The Duck Intern</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="icon" href="../assets/logo.png" type="image/png"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <div class="navbar-left">
+        <a href="../index.html" class="navbar-logo">
+          <img src="../assets/logo.png" alt="The Duck Intern Logo" />
+        </a>
+        <div class="navbar-logo-text">
+          <span class="brand-name">The Duck Intern</span>
+          <span class="brand-sub">An Education in Markets & Minds</span>
+        </div>
+      </div>
+      <ul class="navbar-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../finance/index.html">Finance</a></li>
+        <li><a href="../economics/index.html">Economics</a></li>
+        <li><a href="../thinkers/index.html" class="active">The Thinkers</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Explore ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="../articles/index.html">Must-Read Articles <span>→</span></a></li>
+            <li><a href="../books/index.html">Recommended Books <span>→</span></a></li>
+            <li><a href="../templates/index.html">Templates <span>→</span></a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="navbar-right">
+        <div class="navbar-search">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>
+          </svg>
+          <input placeholder="Search topics…" />
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb">
+    <a href="../index.html">Home</a>
+    <span class="sep">›</span>
+    <span class="here">The Thinkers</span>
+  </div>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero">
+    <div>
+      <div class="page-kicker"><span class="bar"></span>The Thinkers</div>
+      <h1>The minds that <em>built the field.</em></h1>
+      <p class="lede">Every model, every framework, every idea you'll encounter in finance and economics was built by someone. Here are the people worth knowing — and why they matter.</p>
+    </div>
+    <div class="hero-meta">
+      <div class="meta-row"><span>Profiles</span><b>20+ thinkers</b></div>
+      <div class="meta-row"><span>Fields</span><b>Finance, Econ, Behavioral</b></div>
+      <div class="meta-row"><span>Level</span><b>All levels</b></div>
+      <div class="meta-row"><span>Last revised</span><b>Apr 2026</b></div>
+      <div class="hero-quote">
+        "If I have seen further, it is by standing on the shoulders of giants."
+        <cite>— Isaac Newton</cite>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <div class="page-main">
+    <div class="sections">
+
+      <!-- FINANCE -->
+      <section class="topic-section" id="finance-thinkers">
+        <div class="section-head">
+          <div class="title-group">
+            <h2 class="section-title">Finance</h2>
+          </div>
+          <span class="section-sub">Valuation, markets & investing</span>
+        </div>
+        <div class="topic-grid">
+          <article class="card" data-title="Benjamin Graham" data-eyebrow="Value Investing" data-desc="The father of value investing and security analysis. His framework of margin of safety and intrinsic value remains the foundation of fundamental analysis." data-time="10 min read" data-level="Essential" data-updated="Apr 2026">
+            <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            <div class="card-top"><span class="card-num">1894 – 1976</span><span class="card-time">10 min</span></div>
+            <h3 class="card-title">Benjamin Graham</h3>
+            <p class="card-desc">The father of value investing. Taught the world that price and value are not the same thing — and built the framework that Warren Buffett still uses.</p>
+            <div class="card-tag"><span class="dot"></span>Value Investing</div>
+          </article>
+          <article class="card" data-title="Aswath Damodaran" data-eyebrow="Valuation" data-desc="The dean of valuation — NYU professor who made DCF accessible to everyone with a spreadsheet and a question." data-time="10 min read" data-level="Essential" data-updated="Apr 2026">
+            <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            <div class="card-top"><span class="card-num">1957 – present</span><span class="card-time">10 min</span></div>
+            <h3 class="card-title">Aswath Damodaran</h3>
+            <p class="card-desc">The dean of valuation — making DCF accessible to everyone with a spreadsheet and a question. His datasets and models are used by analysts worldwide.</p>
+            <div class="card-tag"><span class="dot"></span>Valuation</div>
+          </article>
+          <article class="card" data-title="Harry Markowitz" data-eyebrow="Portfolio Theory" data-desc="Nobel laureate who proved mathematically that diversification reduces risk — the foundation of modern portfolio management." data-time="10 min read" data-level="Essential" data-updated="Apr 2026">
+            <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            <div class="card-top"><span class="card-num">1927 – 2023</span><span class="card-time">10 min</span></div>
+            <h3 class="card-title">Harry Markowitz</h3>
+            <p class="card-desc">Nobel laureate who proved mathematically that diversification reduces risk. His efficient frontier changed how the world thinks about portfolios.</p>
+            <div class="card-tag"><span class="dot"></span>Portfolio Theory</div>
+          </article>
+          <article class="card" data-title="Eugene Fama" data-eyebrow="Efficient Markets" data-desc="Father of the Efficient Market Hypothesis — the idea that prices already reflect all available information." data-time="10 min read" data-level="Essential" data-updated="Apr 2026">
+            <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            <div class="card-top"><span class="card-num">1939 – present</span><span class="card-time">10 min</span></div>
+            <h3 class="card-title">Eugene Fama</h3>
+            <p class="card-desc">Father of the Efficient Market Hypothesis. The idea that you can't consistently beat the market — and the evidence that keeps proving him right.</p>
+            <div class="card-tag"><span class="dot"></span>Efficient Markets</div>
+          </article>
+          <article class="card" data-title="Franco Modigliani & Merton Miller" data-eyebrow="Corporate Finance" data-desc="Together they proved that in a perfect market, capital structure doesn't affect firm value — and spent decades explaining why it does in reality." data-time="12 min read" data-level="Essential" data-updated="Apr 2026">
+            <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            <div class="card-top"><span class="card-num">1918–2003 / 1923–2000</span><span class="card-time">12 min</span></div>
+            <h3 class="card-title">Modigliani & Miller</h3>
+            <p class="card-desc">Together they proved capital structure is irrelevant in a perfect market — and spent decades explaining why it very much isn't in the real one.</p>
+            <div class="card-tag"><span class="dot"></span>Corporate Finance</div>
+          </article>
+          <article class="card" data-title="William Sharpe" data-eyebrow="CAPM" data-desc="Developer of the Capital Asset Pricing Model — the framework that connects risk and expected return." data-time="10 min read" data-level="Essential" data-updated="Apr 2026">
+            <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            <div class="card-top"><span class="card-num">1934 – present</span><span class="card-time">10 min</span></div>
+            <h3 class="card-title">William Sharpe</h3>
+            <p class="card-desc">Developer of CAPM — the model that connects risk and expected return. His Sharpe Ratio remains the standard measure of risk-adjusted performance.</p>
+            <div class="card-tag"><span class="dot"></span>CAPM & Risk</div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ECONOMICS -->
+      <section class="topic-section" id="economics-thinkers">
+        <div class="section-head">
+          <div class="title-group">
+            <h2 class="section-title">Economics</h2>
+          </div>
+          <span class="section-sub">Macro, micro & development</span>
+        </div>
+        <div class="topic-grid">
+          <article class="card" data-title="Adam Smith" data-eyebrow="Classical Economics" data-desc="The moral philosopher who gave us the invisible hand — and then warned us about the people it was attached to." data-time="10 min read" data-level="Essential" data-updated="Apr 2026">
+            <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            <div class="card-top"><span class="card-num">1723 – 1790</span><span class="card-time">10 min</span></div>
+            <h3 class="card-title">Adam Smith</h3>
+            <p class="card-desc">The moral philosopher who gave us the invisible hand — and then warned us about the people it was attached to. The Wealth of Nations changed everything.</p>
+            <div class="card-tag"><span class="dot"></span>Classical Economics</div>
+          </article>
+          <article class="card" data-title="John Maynard Keynes" data-eyebrow="Macroeconomics" data-desc="Argued governments should run deficits in slumps. Politicians agreed during slumps and forgot during booms." data-time="11 min read" data-level="Essential" data-updated="Apr 2026">
+            <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            <div class="card-top"><span class="card-num">1883 – 1946</span><span class="card-time">11 min</span></div>
+            <h3 class="card-title">John Maynard Keynes</h3>
+            <p class="card-desc">Argued governments should run deficits in slumps. Politicians agreed during slumps; forgot during booms. His ideas still dominate fiscal policy debates.</p>
+            <div class="card-tag"><span class="dot"></span>Macroeconomics</div>
+          </article>
+          <article class="card" data-title="Milton Friedman" data-eyebrow="Monetarism" data-desc="Inflation is always and everywhere a monetary phenomenon. Champion of free markets and the architect of modern central banking thinking." data-time="11 min read" data-level="Essential" data-updated="Apr 2026">
+            <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            <div class="card-top"><span class="card-num">1912 – 2006</span><span class="card-time">11 min</span></div>
+            <h3 class="card-title">Milton Friedman</h3>
+            <p class="card-desc">Inflation is always and everywhere a monetary phenomenon. Champion of free markets and the architect of how central banks think about money supply.</p>
+            <div class="card-tag"><span class="dot"></span>Monetarism</div>
+          </article>
+          <article class="card" data-title="Friedrich Hayek" data-eyebrow="Austrian Economics" data-desc="The price system as information processor — why central planning can never match the efficiency of markets." data-time="11 min read" data-level="Essential" data-updated="Apr 2026">
+            <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            <div class="card-top"><span class="card-num">1899 – 1992</span><span class="card-time">11 min</span></div>
+            <h3 class="card-title">Friedrich Hayek</h3>
+            <p class="card-desc">The price system as information processor — why central planning can never match the distributed intelligence of free markets.</p>
+            <div class="card-tag"><span class="dot"></span>Austrian Economics</div>
+          </article>
+          <article class="card" data-title="Paul Samuelson" data-eyebrow="Modern Economics" data-desc="The man who mathematized economics — his textbook defined how three generations of economists were trained." data-time="10 min read" data-level="Essential" data-updated="Apr 2026">
+            <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            <div class="card-top"><span class="card-num">1915 – 2009</span><span class="card-time">10 min</span></div>
+            <h3 class="card-title">Paul Samuelson</h3>
+            <p class="card-desc">The man who mathematized economics. His textbook defined how three generations of economists were trained — for better and for worse.</p>
+            <div class="card-tag"><span class="dot"></span>Modern Economics</div>
+          </article>
+          <article class="card" data-title="John F. Nash Jr." data-eyebrow="Game Theory" data-desc="One equation, one equilibrium, one profoundly unstable world that now can't stop computing itself." data-time="10 min read" data-level="Essential" data-updated="Apr 2026">
+            <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            <div class="card-top"><span class="card-num">1928 – 2015</span><span class="card-time">10 min</span></div>
+            <h3 class="card-title">John F. Nash Jr.</h3>
+            <p class="card-desc">One equation, one equilibrium, one profoundly unstable world that now can't stop computing itself. Nash equilibrium is everywhere once you see it.</p>
+            <div class="card-tag"><span class="dot"></span>Game Theory</div>
+          </article>
+        </div>
+      </section>
+
+      <!-- BEHAVIORAL -->
+      <section class="topic-section" id="behavioral-thinkers">
+        <div class="section-head">
+          <div class="title-group">
+            <h2 class="section-title">Behavioral & Psychology</h2>
+          </div>
+          <span class="section-sub">How humans actually decide</span>
+        </div>
+        <div class="topic-grid">
+          <article class="card" data-title="Daniel Kahneman" data-eyebrow="Behavioral Economics" data-desc="Nobel laureate who revealed how humans really make decisions — System 1, System 2, and the limits of rational choice." data-time="11 min read" data-level="Essential" data-updated="Apr 2026">
+            <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            <div class="card-top"><span class="card-num">1934 – 2024</span><span class="card-time">11 min</span></div>
+            <h3 class="card-title">Daniel Kahneman</h3>
+            <p class="card-desc">Nobel laureate who showed that the rational agent of economics was, at best, a part-time job we took on reluctantly. Thinking, Fast and Slow changed everything.</p>
+            <div class="card-tag"><span class="dot"></span>Behavioral Economics</div>
+          </article>
+          <article class="card" data-title="Amos Tversky" data-eyebrow="Behavioral Economics" data-desc="Kahneman's collaborator and the co-architect of Prospect Theory — the framework that replaced expected utility." data-time="10 min read" data-level="Essential" data-updated="Apr 2026">
+            <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            <div class="card-top"><span class="card-num">1937 – 1996</span><span class="card-time">10 min</span></div>
+            <h3 class="card-title">Amos Tversky</h3>
+            <p class="card-desc">Kahneman's collaborator and the co-architect of Prospect Theory. Would have shared the Nobel Prize had he lived. The quiet genius behind the revolution.</p>
+            <div class="card-tag"><span class="dot"></span>Behavioral Economics</div>
+          </article>
+          <article class="card" data-title="Richard Thaler" data-eyebrow="Nudge Theory" data-desc="Nobel laureate who built behavioral economics into policy — nudges, choice architecture and the Save More Tomorrow program." data-time="10 min read" data-level="Essential" data-updated="Apr 2026">
+            <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            <div class="card-top"><span class="card-num">1945 – present</span><span class="card-time">10 min</span></div>
+            <h3 class="card-title">Richard Thaler</h3>
+            <p class="card-desc">Built behavioral economics into real policy. Nudge theory, mental accounting and the Save More Tomorrow program changed how governments design choices.</p>
+            <div class="card-tag"><span class="dot"></span>Nudge Theory</div>
+          </article>
+          <article class="card" data-title="Robert Shiller" data-eyebrow="Irrational Markets" data-desc="Predicted the dot-com crash and the housing bubble. Proved that markets are driven as much by narrative as by fundamentals." data-time="11 min read" data-level="Essential" data-updated="Apr 2026">
+            <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            <div class="card-top"><span class="card-num">1946 – present</span><span class="card-time">11 min</span></div>
+            <h3 class="card-title">Robert Shiller</h3>
+            <p class="card-desc">Predicted the dot-com crash and the housing bubble. Proved that markets are driven as much by narrative as by fundamentals — and that CAPE ratios matter.</p>
+            <div class="card-tag"><span class="dot"></span>Irrational Markets</div>
+          </article>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- SIDEBAR -->
+    <aside>
+      <div class="side-box">
+        <div class="side-title">By Field</div>
+        <div class="thinker">
+          <div class="thinker-portrait" style="background:#1E4D8C;">Fi</div>
+          <div class="thinker-body">
+            <p class="thinker-name">Finance</p>
+            <p class="thinker-years">6 profiles</p>
+            <p class="thinker-desc">Valuation, portfolio theory, corporate finance and efficient markets.</p>
+          </div>
+        </div>
+        <div class="thinker">
+          <div class="thinker-portrait" style="background:#2D6A4F;">Ec</div>
+          <div class="thinker-body">
+            <p class="thinker-name">Economics</p>
+            <p class="thinker-years">6 profiles</p>
+            <p class="thinker-desc">Macro, micro, game theory and development economics.</p>
+          </div>
+        </div>
+        <div class="thinker">
+          <div class="thinker-portrait" style="background:#6B4226;">Be</div>
+          <div class="thinker-body">
+            <p class="thinker-name">Behavioral</p>
+            <p class="thinker-years">4 profiles</p>
+            <p class="thinker-desc">How humans actually make decisions — biases, nudges and irrational markets.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="side-box">
+        <div class="side-title">Must-Read Books</div>
+        <div class="thinker">
+          <div class="thinker-body">
+            <p class="thinker-name">The Intelligent Investor</p>
+            <p class="thinker-years">Benjamin Graham · 1949</p>
+            <p class="thinker-desc">The bible of value investing. Still essential after 75 years.</p>
+          </div>
+        </div>
+        <div class="thinker">
+          <div class="thinker-body">
+            <p class="thinker-name">Thinking, Fast and Slow</p>
+            <p class="thinker-years">Daniel Kahneman · 2011</p>
+            <p class="thinker-desc">The definitive guide to how your brain actually works.</p>
+          </div>
+        </div>
+        <div class="thinker">
+          <div class="thinker-body">
+            <p class="thinker-name">The General Theory</p>
+            <p class="thinker-years">John M. Keynes · 1936</p>
+            <p class="thinker-desc">Dense but essential — the book that created macroeconomics.</p>
+          </div>
+        </div>
+        <a class="side-cta" href="../books/index.html">
+          Browse all books
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </aside>
+  </div>
+
+  <!-- AD BANNER -->
+  <div class="ad-banner">Advertisement</div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h4>The Duck Intern</h4>
+        <p>A patient education in markets & minds — built for the intern who asks the obvious question and isn't afraid to get it wrong.</p>
+      </div>
+      <div>
+        <h4>Sections</h4>
+        <ul>
+          <li><a href="../finance/index.html">Finance</a></li>
+          <li><a href="../economics/index.html">Economics</a></li>
+          <li><a href="../thinkers/index.html">The Thinkers</a></li>
+          <li><a href="../index.html">Home</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="../articles/index.html">Must-Read Articles</a></li>
+          <li><a href="../books/index.html">Recommended Books</a></li>
+          <li><a href="../templates/index.html">Templates</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>About</h4>
+        <ul>
+          <li><a href="#">About The Duck Intern</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <span>© 2026 The Duck Intern</span>
+      <span>Finance & Economics Education</span>
+    </div>
+  </footer>
+
+</body>
+</html>

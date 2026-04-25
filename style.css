@@ -50,7 +50,8 @@ a{color:inherit;text-decoration:none}
 .navbar-logo img{height:46px;width:auto}
 .navbar-logo-text{display:flex;flex-direction:column;line-height:1}
 .navbar-logo-text .brand-name{
-  font-family:var(--serif);font-weight:600;
+  font-family:'Fraunces','Times New Roman',serif;
+  font-weight:600;
   font-size:22px;letter-spacing:-.01em;
   color:var(--ink);
 }
@@ -69,6 +70,7 @@ a{color:inherit;text-decoration:none}
   color:var(--ink-2);
   transition:background .15s,color .15s;
   position:relative;
+  font-family:'DM Sans', var(--sans);
 }
 .navbar-links a:hover{background:var(--rule-2)}
 .navbar-links a.active{
@@ -155,7 +157,8 @@ a{color:inherit;text-decoration:none}
 }
 .page-kicker .bar{width:28px;height:1px;background:var(--ink)}
 .page-hero h1{
-  font-family:var(--serif);font-weight:500;
+  font-family:'EB Garamond',Georgia,serif;
+  font-weight:400;
   font-size:clamp(48px,6vw,88px);
   line-height:.95;letter-spacing:-.025em;
   margin:0 0 18px;color:var(--ink);
@@ -217,7 +220,8 @@ a{color:inherit;text-decoration:none}
   color:var(--muted);letter-spacing:.12em;
 }
 .section-title{
-  font-family:var(--serif);font-weight:500;
+  font-family:'Fraunces','Times New Roman',serif;
+  font-weight:500;
   font-size:32px;letter-spacing:-.015em;
   color:var(--ink);margin:0;
 }
@@ -268,14 +272,16 @@ a{color:inherit;text-decoration:none}
   transition:opacity .15s,transform .15s;
 }
 .card-title{
-  font-family:var(--serif);font-weight:500;
+  font-family:'EB Garamond', Georgia, serif;
+  font-weight:600;
   font-size:22px;line-height:1.15;
   letter-spacing:-.01em;color:var(--ink);
   margin:0;padding-right:28px;
 }
 .card-desc{
   font-size:14px;line-height:1.55;
-  color:var(--ink-3);margin:0;max-width:42ch;
+  color:var(--ink-3);margin:0;
+  font-family:'DM Sans', var(--sans);
 }
 .card-tag{
   margin-top:auto;
@@ -544,7 +550,8 @@ aside{
 }
 .home-hero-left .page-kicker{margin-bottom:20px}
 .home-hero-left h1{
-  font-family:var(--serif);font-weight:500;
+  font-family:'EB Garamond',Georgia,serif;
+  font-weight:400;
   font-size:clamp(48px,6vw,80px);
   line-height:.95;letter-spacing:-.025em;
   margin:0 0 20px;color:var(--ink);
@@ -753,7 +760,8 @@ aside{
   color:var(--accent);
 }
 .article-title{
-  font-family:var(--serif);font-weight:500;
+  font-family:'EB Garamond',Georgia,serif;
+  font-weight:500;
   font-size:clamp(36px,5vw,60px);
   line-height:1.05;letter-spacing:-.025em;
   color:var(--ink);margin:0 0 16px;
@@ -817,7 +825,8 @@ aside{
   display:flex;flex-direction:column;gap:2px;
 }
 .toc-link{
-  font-family:var(--sans);font-size:13px;
+  font-family:'DM Sans', var(--sans);
+  font-size:13px;
   color:var(--muted);padding:6px 0;
   line-height:1.4;
   border-left:2px solid transparent;
@@ -842,17 +851,20 @@ aside{
 .article-content section:last-child{
   border-bottom:none;
 }
+.article-content p{
+  font-family:'DM Sans', Georgia, serif;
+  font-size:17px;
+  line-height:1.75;color:var(--ink-2);
+  margin:0 0 16px;
+}
 .article-content h2{
-  font-family:var(--serif);font-weight:500;
+  font-family:'Fraunces','Times New Roman',serif;
+  font-weight:500;
   font-size:28px;letter-spacing:-.015em;
   color:var(--ink);margin:0 0 18px;
   line-height:1.2;
 }
-.article-content p{
-  font-family:var(--serif);font-size:17px;
-  line-height:1.75;color:var(--ink-2);
-  margin:0 0 16px;
-}
+
 .article-content p strong{
   font-weight:600;color:var(--ink);
 }
